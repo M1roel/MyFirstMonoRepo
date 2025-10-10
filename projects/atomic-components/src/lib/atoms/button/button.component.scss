@@ -1,0 +1,22 @@
+@use '../../../variables.scss' as v;
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 24px;
+}
+
+.primary {
+    background-color: v.$color-primary;
+}
+
+.secondary {
+    background-color: v.$color-secondary;
+    color: white;
+}
+
+.tertiary {
+    background-color: v.$color-tertiary;
+    color: white;
+}
