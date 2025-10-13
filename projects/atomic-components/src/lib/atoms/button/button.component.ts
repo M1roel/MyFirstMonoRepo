@@ -9,5 +9,5 @@ import { Component, Input, Output } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label: string = '';
-  @Input() type: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  @Input() type: 'primary' | 'secondary' | 'tertiary' | 'wa-search-btn' = 'primary';
 }

@@ -9,7 +9,7 @@ const meta: Meta<ButtonComponent> = {
   argTypes: {
     type: {
       control: 'radio',
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['primary', 'secondary', 'tertiary', 'wa-search-btn'],
     },
   }
 };
@@ -35,6 +35,13 @@ export const Tertiary: Story = {
   args: {
     label: 'Tertiary Button',
     type: 'tertiary'
+  }
+};
+
+export const WeatherAppBtn: Story = {
+  args: {
+    label: 'Search',
+    type: 'wa-search-btn'
   }
 };
 
