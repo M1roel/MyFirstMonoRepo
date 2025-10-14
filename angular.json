@@ -5,6 +5,11 @@
   "projects": {
     "atomic-components": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/atomic-components",
       "sourceRoot": "projects/atomic-components/src",
       "prefix": "lib",

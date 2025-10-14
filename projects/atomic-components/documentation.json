@@ -21,6 +21,16 @@
                 "defaultValue": "{\n  args: {\n    label: 'Click me!',\n    type: 'primary'\n  }\n}"
             },
             {
+                "name": "Email",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Enter email',\n    type: 'email',\n    variant: 'tertiary',\n  },\n}"
+            },
+            {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -29,6 +39,36 @@
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
                 "defaultValue": "{\n  title: 'Atoms/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    type: {\n      control: 'radio',\n      options: ['primary', 'secondary', 'tertiary', 'wa-search-btn'],\n    },\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  title: 'Atoms/Input',\n  component: InputComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    type: {\n      control: 'radio',\n      options: ['text', 'password', 'email', 'number', 'search'],\n    },\n    variant: {\n      control: 'radio',\n      options: ['primary', 'secondary', 'tertiary'],\n    },\n  }\n}"
+            },
+            {
+                "name": "Number",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Enter number',\n    type: 'number',\n    variant: 'primary',\n  },\n}"
+            },
+            {
+                "name": "Password",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Enter password',\n    type: 'password',\n    variant: 'secondary',\n  },\n}"
             },
             {
                 "name": "preview",
@@ -51,6 +91,16 @@
                 "defaultValue": "{\n  args: {\n    label: 'Primary Button',\n    type: 'primary'\n  }\n}"
             },
             {
+                "name": "Search",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Search...',\n    type: 'search',\n    variant: 'secondary',\n  },\n}"
+            },
+            {
                 "name": "Secondary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -71,6 +121,16 @@
                 "defaultValue": "{\n  args: {\n    label: 'Tertiary Button',\n    type: 'tertiary'\n  }\n}"
             },
             {
+                "name": "Text",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Enter text',\n    type: 'text',\n    variant: 'primary',\n  },\n}"
+            },
+            {
                 "name": "WeatherAppBtn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -89,6 +149,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -159,6 +230,68 @@
                     "defaultValue": "{\n  args: {\n    label: 'Search',\n    type: 'wa-search-btn'\n  }\n}"
                 }
             ],
+            "projects/atomic-components/src/stories/atoms/input.stories.ts": [
+                {
+                    "name": "Email",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Enter email',\n    type: 'email',\n    variant: 'tertiary',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputComponent>",
+                    "defaultValue": "{\n  title: 'Atoms/Input',\n  component: InputComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    type: {\n      control: 'radio',\n      options: ['text', 'password', 'email', 'number', 'search'],\n    },\n    variant: {\n      control: 'radio',\n      options: ['primary', 'secondary', 'tertiary'],\n    },\n  }\n}"
+                },
+                {
+                    "name": "Number",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Enter number',\n    type: 'number',\n    variant: 'primary',\n  },\n}"
+                },
+                {
+                    "name": "Password",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Enter password',\n    type: 'password',\n    variant: 'secondary',\n  },\n}"
+                },
+                {
+                    "name": "Search",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Search...',\n    type: 'search',\n    variant: 'secondary',\n  },\n}"
+                },
+                {
+                    "name": "Text",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Enter text',\n    type: 'text',\n    variant: 'primary',\n  },\n}"
+                }
+            ],
             "projects/atomic-components/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -182,6 +315,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ButtonComponent>",
                     "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/atoms/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -271,6 +417,76 @@
             },
             {
                 "filePath": "projects/atomic-components/src/stories/atoms/button.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Email",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Number",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Password",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Search",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Text",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",
