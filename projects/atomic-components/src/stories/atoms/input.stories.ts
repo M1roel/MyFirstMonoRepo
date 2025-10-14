@@ -13,7 +13,7 @@ const meta: Meta<InputComponent> = {
     },
     variant: {
       control: 'radio',
-      options: ['primary', 'secondary', 'tertiary', 'wa-search'],
+      options: ['primary', 'wa-search'],
     },
   }
 };
