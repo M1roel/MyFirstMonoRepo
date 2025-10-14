@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-headline',
+  selector: 'atomic-headline',
   imports: [],
   templateUrl: './headline.component.html',
   styleUrl: './headline.component.scss'

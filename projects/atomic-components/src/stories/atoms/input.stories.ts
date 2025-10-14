@@ -9,7 +9,7 @@ const meta: Meta<InputComponent> = {
     placeholder: { control: 'text' },
     type: {
       control: 'radio',
-      options: ['text', 'password', 'email', 'number', 'search'],
+      options: ['text', 'password', 'email', 'number', 'search', 'textarea'],
     },
     variant: {
       control: 'radio',
@@ -59,5 +59,13 @@ export const Search: Story = {
     placeholder: 'Search...',
     type: 'search',
     variant: 'secondary',
+  },
+};
+
+export const Textarea: Story = {
+  args: {
+    placeholder: 'Enter your message',
+    type: 'textarea',
+    variant: 'tertiary',
   },
 };

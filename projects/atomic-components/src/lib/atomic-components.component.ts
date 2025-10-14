@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-atomic-components',
+  selector: 'atomic-components',
   imports: [],
   template: `
     <p>

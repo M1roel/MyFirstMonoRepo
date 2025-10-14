@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-text',
+  selector: 'atomic-text',
   imports: [],
   templateUrl: './text.component.html',
   styleUrl: './text.component.scss'

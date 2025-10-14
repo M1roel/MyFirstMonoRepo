@@ -7,7 +7,7 @@ const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
   tags: ['autodocs'],
   argTypes: {
-    type: {
+    variant: {
       control: 'radio',
       options: ['primary', 'secondary', 'tertiary', 'wa-search-btn'],
     },
@@ -20,34 +20,34 @@ type Story = StoryObj<ButtonComponent>;
 export const Primary: Story = {
   args: {
     label: 'Primary Button',
-    type: 'primary'
+    variant: 'primary'
   }
 };
 
 export const Secondary: Story = {
   args: {
     label: 'Secondary Button',
-    type: 'secondary'
+    variant: 'secondary'
   }
 };
 
 export const Tertiary: Story = {
   args: {
     label: 'Tertiary Button',
-    type: 'tertiary'
+    variant: 'tertiary'
   }
 };
 
 export const WeatherAppBtn: Story = {
   args: {
     label: 'Search',
-    type: 'wa-search-btn'
+    variant: 'wa-search-btn'
   }
 };
 
 export const CustomLabel: Story = {
   args: {
     label: 'Click me!',
-    type: 'primary'
+    variant: 'primary'
   }
 };

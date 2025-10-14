@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-icon',
+  selector: 'atomic-icon',
   imports: [],
   templateUrl: './icon.component.html',
   styleUrl: './icon.component.scss'
