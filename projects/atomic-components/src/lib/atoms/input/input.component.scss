@@ -1,0 +1,28 @@
+@use '../../../_variables' as v;
+@use '../../../../../../projects/weather-app/src/styles.scss' as *;
+
+.input {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.wa-search {
+    background-color: v.$wa-color-neutral-800;
+    border: none;
+    border-radius: 12px;
+    color: v.$wa-color-neutral-200;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    padding: 16px 24px;
+
+    &::placeholder {
+        color: v.$wa-color-neutral-200;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+

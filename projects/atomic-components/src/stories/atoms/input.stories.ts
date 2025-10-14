@@ -13,7 +13,7 @@ const meta: Meta<InputComponent> = {
     },
     variant: {
       control: 'radio',
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['primary', 'secondary', 'tertiary', 'wa-search'],
     },
   }
 };
@@ -54,18 +54,18 @@ export const Number: Story = {
   },
 };
 
-export const Search: Story = {
-  args: {
-    placeholder: 'Search...',
-    type: 'search',
-    variant: 'secondary',
-  },
-};
-
 export const Textarea: Story = {
   args: {
     placeholder: 'Enter your message',
     type: 'textarea',
     variant: 'tertiary',
+  },
+};
+
+export const WeatherAppSearch: Story = {
+  args: {
+    placeholder: 'Search for a city...',
+    type: 'search',
+    variant: 'wa-search',
   },
 };

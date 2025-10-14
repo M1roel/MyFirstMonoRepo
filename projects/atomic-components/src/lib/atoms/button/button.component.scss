@@ -1,5 +1,5 @@
 @use '../../../variables.scss' as v;
-
+@use '../../../../../../projects/weather-app/src/styles.scss' as *;
 .btn {
   border: none;
   padding: 12px 24px;

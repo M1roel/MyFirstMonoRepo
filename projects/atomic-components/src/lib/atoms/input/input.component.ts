@@ -10,5 +10,5 @@ import { NgClass } from '@angular/common';
 export class InputComponent {
   @Input() type: 'text' | 'password' | 'email' | 'number' | 'search' | 'textarea' = 'text';
   @Input() placeholder: string = '';
-  @Input() variant: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'wa-search' = 'primary';
 }
