@@ -9,7 +9,7 @@ const meta: Meta<ButtonComponent> = {
   argTypes: {
     variant: {
       control: 'radio',
-      options: ['primary', 'secondary', 'tertiary', 'wa-search-btn'],
+      options: ['primary', 'wa-search-btn'],
     },
   }
 };
@@ -17,37 +17,16 @@ const meta: Meta<ButtonComponent> = {
 export default meta;
 type Story = StoryObj<ButtonComponent>; 
 
-export const Primary: Story = {
+export const DefaultButton: Story = {
   args: {
     label: 'Primary Button',
     variant: 'primary'
   }
 };
 
-export const Secondary: Story = {
-  args: {
-    label: 'Secondary Button',
-    variant: 'secondary'
-  }
-};
-
-export const Tertiary: Story = {
-  args: {
-    label: 'Tertiary Button',
-    variant: 'tertiary'
-  }
-};
-
-export const WeatherAppBtn: Story = {
+export const WeatherAppButton: Story = {
   args: {
     label: 'Search',
     variant: 'wa-search-btn'
-  }
-};
-
-export const CustomLabel: Story = {
-  args: {
-    label: 'Click me!',
-    variant: 'primary'
   }
 };

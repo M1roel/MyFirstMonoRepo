@@ -22,50 +22,18 @@ export default meta;
 
 type Story = StoryObj<InputComponent>;
 
-export const Text: Story = {
+export const DefaultInput: Story = {
   args: {
-    placeholder: 'Enter text',
+    placeholder: 'Enter text...',
     type: 'text',
     variant: 'primary',
   },
 };
 
-export const Password: Story = {
-  args: {
-    placeholder: 'Enter password',
-    type: 'password',
-    variant: 'secondary',
-  },
-};
-
-export const Email: Story = {
-  args: {
-    placeholder: 'Enter email',
-    type: 'email',
-    variant: 'tertiary',
-  },
-};
-
-export const Number: Story = {
-  args: {
-    placeholder: 'Enter number',
-    type: 'number',
-    variant: 'primary',
-  },
-};
-
-export const Textarea: Story = {
-  args: {
-    placeholder: 'Enter your message',
-    type: 'textarea',
-    variant: 'tertiary',
-  },
-};
-
 export const WeatherAppSearch: Story = {
   args: {
-    placeholder: 'Search for a city...',
-    type: 'search',
-    variant: 'wa-search',
+    placeholder: 'Search for a place...',
+    type: "textarea",
+    variant: "wa-search",
   },
 };
