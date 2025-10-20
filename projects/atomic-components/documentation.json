@@ -54,6 +54,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SearchBarComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Search Bar',\n  component: SearchBarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    buttonText: { control: 'text' }\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -79,16 +89,6 @@
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
                 "defaultValue": "{\n  title: 'Atoms/Input',\n  component: InputComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    type: {\n      control: 'radio',\n      options: ['text', 'password', 'email', 'number', 'search', 'textarea'],\n    },\n    variant: {\n      control: 'radio',\n      options: ['primary', 'wa-search'],\n    },\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<SearchBarComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Search Bar',\n  component: SearchBarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    buttonText: { control: 'text' }\n  }\n}"
             },
             {
                 "name": "preview",
@@ -147,6 +147,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<SearchBarComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
                 "deprecated": false,
@@ -171,17 +182,6 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<SearchBarComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -334,6 +334,19 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
+            "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SearchBarComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "projects/atomic-components/src/stories/atoms/button.stories.ts": [
                 {
                     "name": "Story",
@@ -367,19 +380,6 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<SearchBarComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
