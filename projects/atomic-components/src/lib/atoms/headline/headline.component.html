@@ -1,1 +1,9 @@
-<p>headline works!</p>
+<ng-container>
+    <h1 *ngSwitchCase="1" [ngClass]="className">{{ headingText }}</h1>
+    <h2 *ngSwitchCase="2" [ngClass]="className">{{ headingText }}</h2>
+    <h3 *ngSwitchCase="3" [ngClass]="className">{{ headingText }}</h3>
+    <h4 *ngSwitchCase="4" [ngClass]="className">{{ headingText }}</h4>
+    <h5 *ngSwitchCase="5" [ngClass]="className">{{ headingText }}</h5>
+    <h6 *ngSwitchCase="6" [ngClass]="className">{{ headingText }}</h6>
+    <span *ngSwitchDefault [ngClass]="className">{{ headingText }}</span>
+</ng-container>

@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, Input, Output } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'atomic-button',
@@ -10,4 +10,9 @@ import { Component, Input, Output } from '@angular/core';
 export class ButtonComponent {
   @Input() label: string = '';
   @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'wa-search-btn' = 'primary';
+  @Output() clicked = new EventEmitter<void>();
+
+  onClick() {
+    this.clicked.emit();
+  }
 }
