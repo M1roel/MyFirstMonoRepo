@@ -63,3 +63,32 @@ font-face {
   font-style: normal;
   font-display: swap;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+}

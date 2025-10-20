@@ -1,0 +1,25 @@
+@use '../../../variables' as v;
+
+.card-main {
+    background-color: v.$wa-color-neutral-800;
+    border-radius: 12px;
+    font-family: 'DM Sans', sans-serif;
+    gap: 24px;
+    max-height: 118px;
+    max-width: 182px;
+    padding: 20px;
+}
+
+.label-text {
+    color: v.$wa-color-neutral-200;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 120%;
+}
+
+.unit-text {
+    color: v.$wa-color-neutral-0;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 100%;
+}
