@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'atomic-icon',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './icon.component.scss'
 })
 export class IconComponent {
-
+  @Input() iconSrc: string = '';
+  @Input() alt: string = '';
+  @Input() title: string = '';
+  @Input() class: string = '';
 }
