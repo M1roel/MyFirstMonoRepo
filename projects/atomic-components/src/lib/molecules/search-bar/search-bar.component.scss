@@ -1,18 +1,17 @@
 .search-bar {
-    display: flex;
-    gap: 16px;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
     justify-content: center;
-    flex-direction: row; /* Desktop: horizontal */
+    max-width: 656px;
     width: 100%;
-    max-width: 500px;
 }
 
-/* Mobile: vertikal mit 100% Breite */
 @media (max-width: 768px) {
     .search-bar {
+        align-items: stretch;
         flex-direction: column;
-        align-items: stretch; /* Macht Kinder 100% breit */
         max-width: 100%;
     }
     
