@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TextComponent } from '../../atoms/text/text.component';
+import { DateComponent } from '../../atoms/date/date.component';
+import { IconComponent } from '../../atoms/icon/icon.component';
 
 @Component({
   selector: 'atomic-forecast-card',
-  imports: [],
+  standalone: true,
+  imports: [TextComponent, DateComponent, IconComponent],
   templateUrl: './forecast-card.component.html',
-  styleUrl: './forecast-card.component.scss'
+  styleUrls: ['./forecast-card.component.scss']
 })
 export class ForecastCardComponent {
-
+  @Input() format: string = '';
+  @Input() locale: string = '';
+  @Input() className: string = '';
 }
