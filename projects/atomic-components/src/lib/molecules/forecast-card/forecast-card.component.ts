@@ -14,4 +14,5 @@ export class ForecastCardComponent {
   @Input() format: string = '';
   @Input() locale: string = '';
   @Input() className: string = '';
+  @Input() text: string = '';
 }
