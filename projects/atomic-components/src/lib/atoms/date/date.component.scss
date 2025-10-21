@@ -1,19 +1,19 @@
 @use '../../../_variables' as v;
 
 .date {
-    font-family: 'DM Sans', sans-serif;
     color: v.$wa-color-neutral-900;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 400;
     line-height: 120%;
 }
 
 .wa-date {
-    font-size: 1rem;
     color: v.$wa-color-neutral-200;
+    font-size: 1rem;
     text-align: center;
 }
 
 .wa-date-small {
-    font-size: 0.875rem;
     color: v.$wa-color-neutral-300;
+    font-size: 0.875rem;
 }
