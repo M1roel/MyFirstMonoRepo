@@ -2,11 +2,13 @@
     <atomic-input 
         [variant]="'wa-search'"
         [placeholder]="placeholder"
-        [type]="'search'">
+        [type]="'search'"
+        (input)="onInputChange($event)">
     </atomic-input>
     <atomic-button 
         class="button"
         [variant]="'wa-search-btn'"
-        [label]="buttonText">
+        [label]="buttonText"
+        (click)="onSearchClick()">
     </atomic-button>
 </section>
