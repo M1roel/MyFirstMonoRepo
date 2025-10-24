@@ -27,9 +27,6 @@ export class AppComponent implements OnInit {
 
   constructor(private fetchWeatherService: FetchWeatherService) {}
 
-  /**
-   * Konvertiert Sichtweite von Metern zu Kilometern
-   */
   get visibilityInKm(): string {
     return (this.visibility / 1000).toFixed(1);
   }
