@@ -7,9 +7,26 @@
     [condition]="currentCondition" 
     [weatherIcon]="weatherIcon">
   </atomic-forecast-card>
+  <div class="info-cards-wrapper">
   <atomic-info-card 
     [label]="'Feels Like'" 
     [value]="feelsLike ? feelsLike.toString() : ''" 
     [unit]="'°C'">
   </atomic-info-card>
+  <atomic-info-card 
+    [label]="'Humidity'" 
+    [value]="humidity ? humidity.toString() : ''" 
+    [unit]="'%'" >
+  </atomic-info-card>
+  <atomic-info-card 
+    [label]="'Wind Speed'" 
+    [value]="windSpeed ? windSpeed.toString() : ''" 
+    [unit]="'m/s'">
+  </atomic-info-card>
+  <atomic-info-card 
+    [label]="'Visibility'" 
+    [value]="visibilityInKm ? visibilityInKm : ''" 
+    [unit]="'km'" >
+  </atomic-info-card>
+  </div>
 </section>

@@ -3,10 +3,14 @@
 .card-main {
     background-color: v.$wa-color-neutral-800;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-family: 'DM Sans', sans-serif;
     gap: 24px;
-    max-height: 118px;
+    height: 118px;
     max-width: 182px;
+    min-width: 163.5px;
     padding: 20px;
 }
 
