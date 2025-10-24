@@ -1,12 +1,12 @@
 @use '../../../variables' as v;
 
 .forecast-card {
-    background-image: url('../../../../../weather-app/public/images/bg-today-small.svg');
     background-size: cover;
     background-position: center;
     border-radius: 20px;
     height: 286px;
     width: 343px;
+    padding: 20px 24px;
 }
 
 .fc-up {
@@ -17,6 +17,7 @@
 .fc-down {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .fc-up atomic-text {
@@ -29,6 +30,13 @@
 .fc-up atomic-date {
     color: v.$wa-color-neutral-200;
     font-size: 1.125rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+.fc-down atomic-text {
+    color: v.$wa-color-neutral-0;
+    font-size: 96px;
     line-height: 120%;
     text-align: center;
 }

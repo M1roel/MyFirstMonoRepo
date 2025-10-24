@@ -15,4 +15,11 @@ export class ForecastCardComponent {
   @Input() locale: string = '';
   @Input() className: string = '';
   @Input() text: string = '';
+  
+  // Wetter-App-spezifische Inputs
+  @Input() city: string = '';
+  @Input() temperature: number = 0;
+  @Input() condition: string = '';
+  @Input() weatherIcon: string = '';
+  @Input() backgroundImage: string = '/images/bg-today-small.svg';
 }

@@ -1,10 +1,10 @@
-<section class="forecast-card">
+<section class="forecast-card" [style.background-image]="'url(' + backgroundImage + ')'">
     <div class="fc-up">
-        <atomic-text [text]="'Berlin Deutschland'"></atomic-text>
+        <atomic-text [text]="city || 'Stadt wird geladen...'"></atomic-text>
         <atomic-date></atomic-date>
     </div>
     <div class="fc-down">
-        <atomic-icon></atomic-icon>
-        <atomic-text [text]="'Sunny, 25°C'"></atomic-text>
+        <atomic-icon [iconSrc]="weatherIcon" [alt]="condition"></atomic-icon>
+        <atomic-text [text]="temperature ? temperature + '°C' : 'Wetter wird geladen...'"></atomic-text>
     </div>
 </section>
