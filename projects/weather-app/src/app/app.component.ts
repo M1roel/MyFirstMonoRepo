@@ -17,6 +17,7 @@ export class AppComponent {
   
   currentCity: string = '';
   currentTemperature: number = 0;
+  feelsLike: number = 0;
   currentCondition: string = '';
   weatherIcon: string = '';
   isLoading: boolean = false;
@@ -37,6 +38,7 @@ export class AppComponent {
         
         // OpenWeather API Struktur anpassen
         this.currentTemperature = Math.round(weatherData.main.temp);
+        this.feelsLike = Math.round(weatherData.main.feels_like);
         this.currentCondition = weatherData.weather[0].description;
         this.weatherIcon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
         this.isLoading = false;
