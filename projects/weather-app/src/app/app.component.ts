@@ -55,7 +55,6 @@ export class AppComponent implements OnInit {
         this.isLoading = false;
       },
       error: (error: any) => {
-        console.error('Error fetching weather data:', error);
         this.isLoading = false;
       }
     });
