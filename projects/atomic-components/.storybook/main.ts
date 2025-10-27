@@ -12,6 +12,10 @@ const config: StorybookConfig = {
     "name": "@storybook/angular",
     "options": {}
   },
-  "staticDirs": ["../../weather-app/public"]
+  "staticDirs": [
+    { from: "../../weather-app/public", to: "/" },
+    { from: "../../ecoconnect/public", to: "/ecoconnect" },
+    { from: "../public", to: "/atomic-components" }
+  ]
 };
 export default config;
