@@ -21,5 +21,4 @@ export class ForecastCardComponent {
   @Input() temperature: number = 0;
   @Input() condition: string = '';
   @Input() weatherIcon: string = '';
-  @Input() backgroundImage: string = '/images/bg-today-small.svg';
 }
