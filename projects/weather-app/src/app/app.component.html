@@ -1,5 +1,5 @@
 <section weather-app-wrapper>
-  <atomic-headline class="headline" [headingText]="'How is the sky looking today?'" [level]="2"></atomic-headline>
+  <atomic-headline class="headline" [headingText]="'Wie wird das Wetter heute?'" [level]="2"></atomic-headline>
   <atomic-search-bar (search)="onSearch($event)"></atomic-search-bar>
   <atomic-forecast-card 
     [city]="currentCity" 
@@ -9,24 +9,24 @@
   </atomic-forecast-card>
   <div class="info-cards-wrapper">
   <atomic-info-card 
-    [label]="'Feels Like'" 
+    [label]="'Gefühlte Temp.'" 
     [value]="feelsLike ? feelsLike.toString() : ''" 
     [unit]="'°C'">
   </atomic-info-card>
   <atomic-info-card 
-    [label]="'Humidity'" 
+    [label]="'Luftfeuchte'" 
     [value]="humidity ? humidity.toString() : ''" 
     [unit]="'%'" >
   </atomic-info-card>
   <atomic-info-card 
-    [label]="'Wind Speed'" 
+    [label]="'Windgeschw.'" 
     [value]="windSpeed ? windSpeed.toString() : ''" 
     [unit]="'m/s'">
   </atomic-info-card>
   <atomic-info-card 
-    [label]="'Visibility'" 
-    [value]="visibilityInKm ? visibilityInKm : ''" 
-    [unit]="'km'" >
+    [label]="'Min/Max Temp'" 
+    [value]="(tempMin != null ? tempMin.toString() : '') + ' / ' + (tempMax != null ? tempMax.toString() : '')" 
+    [unit]="'°C'" >
   </atomic-info-card>
   </div>
 </section>

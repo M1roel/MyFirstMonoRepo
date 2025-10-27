@@ -21,6 +21,8 @@ export class AppComponent implements OnInit {
   humidity: number = 0;
   windSpeed: number = 0;
   visibility: number = 0;
+  tempMin: number = 0;
+  tempMax: number = 0;
   currentCondition: string = '';
   weatherIcon: string = '';
   isLoading: boolean = false;
@@ -50,6 +52,8 @@ export class AppComponent implements OnInit {
         this.humidity = weatherData.main.humidity;
         this.windSpeed = weatherData.wind.speed;
         this.visibility = weatherData.visibility;
+        this.tempMin = Math.round(weatherData.main.temp_min);
+        this.tempMax = Math.round(weatherData.main.temp_max);
         this.currentCondition = weatherData.weather[0].description;
         this.weatherIcon = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`;
         this.isLoading = false;
