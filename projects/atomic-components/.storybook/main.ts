@@ -11,6 +11,7 @@ const config: StorybookConfig = {
   "framework": {
     "name": "@storybook/angular",
     "options": {}
-  }
+  },
+  "staticDirs": ["../../weather-app/public"]
 };
 export default config;
