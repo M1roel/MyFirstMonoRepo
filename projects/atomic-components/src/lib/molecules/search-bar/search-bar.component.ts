@@ -9,8 +9,8 @@ import { ButtonComponent } from '../../atoms/button/button.component';
   styleUrl: './search-bar.component.scss'
 })
 export class SearchBarComponent {
-  @Input() placeholder: string = 'Search for a place...';
-  @Input() buttonText: string = 'Search';
+  @Input() placeholder: string = 'Suche nach einem Ort...';
+  @Input() buttonText: string = 'Suchen';
   @Output() search: EventEmitter<string> = new EventEmitter<string>();
 
   currentValue: string = '';

@@ -16,7 +16,7 @@ type Story = StoryObj<SearchBarComponent>;
 
 export const WeatherAppSearchBar: Story = {
   args: {
-    placeholder: 'Search for a city...',
-    buttonText: 'Search'
+    placeholder: 'Suche nach einer Stadt...',
+    buttonText: 'Suchen'
   },
 };  

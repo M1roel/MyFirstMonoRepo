@@ -1,10 +1,10 @@
 export interface DailyForecast {
   day: string;
-  date: string;
+  date?: string;
   temperature: number;
-  condition: string;
+  condition?: string;
   icon: string;
-  humidity: number;
-  windSpeed: number;
-  precipitation: number;
+  humidity?: number;
+  windSpeed?: number;
+  precipitation?: number;
 }

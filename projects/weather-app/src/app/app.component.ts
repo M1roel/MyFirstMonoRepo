@@ -5,7 +5,7 @@ import { InfoCardComponent } from '../../../atomic-components/src/lib/molecules/
 import { ForecastCardComponent } from '../../../atomic-components/src/lib/molecules/forecast-card/forecast-card.component';
 import { FetchWeatherService } from './core/services/fetch-weather.service';
 import { WeatherData } from './core/models/weather.model';
-import { DailyForecastComponent } from '../../../atomic-components/src/lib/organism/daily-forecast/daily-forecast.component';
+import { DailyForecastComponent } from '../../../atomic-components/src/lib/organisms/daily-forecast/daily-forecast.component';
 import { DailyForecast } from './core/models/daily-forecast.model';
 import { DailyForecastService } from './core/services/daily-forecast.service';
 import { CommonModule } from '@angular/common';

@@ -17,4 +17,4 @@ export * from './lib/molecules/search-bar/search-bar.component';
 export * from './lib/molecules/forecast-card/forecast-card.component';
 
 // Organisms
-export * from './lib/organism/daily-forecast/daily-forecast.component';
+export * from './lib/organisms/daily-forecast/daily-forecast.component';
