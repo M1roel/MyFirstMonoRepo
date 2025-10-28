@@ -5,10 +5,14 @@ import { InfoCardComponent } from '../../../atomic-components/src/lib/molecules/
 import { ForecastCardComponent } from '../../../atomic-components/src/lib/molecules/forecast-card/forecast-card.component';
 import { FetchWeatherService } from './core/services/fetch-weather.service';
 import { WeatherData } from './core/models/weather.model';
+import { DailyForecastComponent } from '../../../atomic-components/src/lib/organism/daily-forecast/daily-forecast.component';
+import { DailyForecast } from './core/models/daily-forecast.model';
+import { DailyForecastService } from './core/services/daily-forecast.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [InfoCardComponent, HeadlineComponent, SearchBarComponent, ForecastCardComponent],
+  imports: [InfoCardComponent, HeadlineComponent, SearchBarComponent, ForecastCardComponent, DailyForecastComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -26,8 +30,9 @@ export class AppComponent implements OnInit {
   currentCondition: string = '';
   weatherIcon: string = '';
   isLoading: boolean = false;
+  dummyForecast: DailyForecast[] = [];
 
-  constructor(private fetchWeatherService: FetchWeatherService) {}
+  constructor(private fetchWeatherService: FetchWeatherService, private dailyForecastService: DailyForecastService) {}
 
   get visibilityInKm(): string {
     return (this.visibility / 1000).toFixed(1);
@@ -35,6 +40,21 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.onSearch('Berlin');
+    this.loadDailyForecast();
+  }
+
+  /**
+   * Lädt die Dummy-Daten für die 7-Tage-Vorhersage
+   */
+  loadDailyForecast() {
+    this.dailyForecastService.getDailyForecast().subscribe({
+      next: (forecast: DailyForecast[]) => {
+        this.dummyForecast = forecast;
+      },
+      error: (error: any) => {
+        console.error('Fehler beim Laden der Vorhersage:', error);
+      }
+    });
   }
 
   /**

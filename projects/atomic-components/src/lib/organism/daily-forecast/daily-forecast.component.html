@@ -1,0 +1,10 @@
+<section class="daily-forecast-wrapper">
+    <atomic-info-card 
+        class="daily-forecast-item" 
+        *ngFor="let day of dummyForecast"
+        [label]="day.day"
+        [value]="day.temperature.toString()"
+        [unit]="'°C'"
+        [icon]="day.icon">
+    </atomic-info-card>
+</section>

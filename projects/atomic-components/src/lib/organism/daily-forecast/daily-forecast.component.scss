@@ -1,0 +1,31 @@
+.daily-forecast-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: auto;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.daily-forecast-item {
+    flex: 0 0 auto;
+    min-width: 120px;
+    
+    ::ng-deep .card-icon {
+        width: 64px !important;
+        height: 64px !important;
+    }
+    
+    ::ng-deep .card-main {
+        display: flex;
+        align-items: center;
+        height: auto;
+        min-height: 200px;
+        max-width: 140px;
+        min-width: 120px;
+        gap: 12px;
+    }
+}
