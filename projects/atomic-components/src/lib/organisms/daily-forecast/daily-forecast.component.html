@@ -1,4 +1,10 @@
-<section class="daily-forecast-wrapper">
+<section class="daily-forecast">
+<atomic-headline 
+    [headingText]="headingText"
+    [level]="level" 
+    class="daily-forecast-title">
+</atomic-headline>
+<div class="daily-forecast-wrapper">
     <atomic-info-card 
         class="daily-forecast-item" 
         *ngFor="let day of dummyForecast"
@@ -7,4 +13,5 @@
         [unit]="'°C'"
         [icon]="day.icon">
     </atomic-info-card>
+</div>
 </section>

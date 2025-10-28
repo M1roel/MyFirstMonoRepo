@@ -16,6 +16,8 @@ type Story = StoryObj<DailyForecastComponent>;
 
 export const Default: Story = {
   args: {
+    headingText: '7-Tage Wettervorhersage',
+    level: 2,
     dummyForecast: [
       { day: 'Montag', temperature: 20, icon: '/images/icon-sunny.webp' },
       { day: 'Dienstag', temperature: 18, icon: '/images/icon-overcast.webp' },
