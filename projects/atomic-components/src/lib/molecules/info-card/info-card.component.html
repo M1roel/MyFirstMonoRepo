@@ -1,4 +1,5 @@
 <section class="card-main">
     <atomic-text class="label-text" [text]="label"></atomic-text>
+    <atomic-icon *ngIf="icon" class="card-icon" [iconSrc]="icon"></atomic-icon>
     <atomic-text class="unit-text" [text]="value + (unit ? ' ' + unit : '')"></atomic-text>
 </section>
