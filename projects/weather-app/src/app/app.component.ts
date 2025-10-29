@@ -8,11 +8,12 @@ import { WeatherData } from './core/models/weather.model';
 import { DailyForecastComponent } from '../../../atomic-components/src/lib/organisms/daily-forecast/daily-forecast.component';
 import { DailyForecast } from './core/models/daily-forecast.model';
 import { DailyForecastService } from './core/services/daily-forecast.service';
+import { HourlyForecastComponent } from '../../../atomic-components/src/lib/organisms/hourly-forecast/hourly-forecast.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [InfoCardComponent, HeadlineComponent, SearchBarComponent, ForecastCardComponent, DailyForecastComponent, CommonModule],
+  imports: [InfoCardComponent, HeadlineComponent, SearchBarComponent, ForecastCardComponent, DailyForecastComponent, HourlyForecastComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
