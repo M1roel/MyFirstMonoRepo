@@ -10,84 +10,51 @@ export class DailyForecastService {
   constructor() { }
 
   /**
-   * Gibt Dummy-Daten für eine 7-Tage-Wettervorhersage zurück
+   * Gibt dynamische 7-Tage-Wettervorhersage ab morgen zurück
    * @returns Observable<DailyForecast[]>
    */
   getDailyForecast(): Observable<DailyForecast[]> {
-    const dummyForecast: DailyForecast[] = [
-      {
-        day: 'Montag',
-        date: '28.10.',
-        temperature: 18,
-        condition: 'Sonnig',
-        icon: '/images/icon-sunny.webp',
-        humidity: 65,
-        windSpeed: 12,
-        precipitation: 0
-      },
-      {
-        day: 'Dienstag',
-        date: '29.10.',
-        temperature: 16,
-        condition: 'Bewölkt',
-        icon: '/images/icon-overcast.webp',
-        humidity: 78,
-        windSpeed: 8,
-        precipitation: 20
-      },
-      {
-        day: 'Mittwoch',
-        date: '30.10.',
-        temperature: 14,
-        condition: 'Regnerisch',
-        icon: '/images/icon-rain.webp',
-        humidity: 85,
-        windSpeed: 15,
-        precipitation: 75
-      },
-      {
-        day: 'Donnerstag',
-        date: '31.10.',
-        temperature: 12,
-        condition: 'Gewitter',
-        icon: '/images/icon-storm.webp',
-        humidity: 90,
-        windSpeed: 22,
-        precipitation: 95
-      },
-      {
-        day: 'Freitag',
-        date: '01.11.',
-        temperature: 15,
-        condition: 'Teilweise bewölkt',
-        icon: '/images/icon-partly-cloudy.webp',
-        humidity: 70,
-        windSpeed: 10,
-        precipitation: 30
-      },
-      {
-        day: 'Samstag',
-        date: '02.11.',
-        temperature: 19,
-        condition: 'Sonnig',
-        icon: '/images/icon-sunny.webp',
-        humidity: 60,
-        windSpeed: 6,
-        precipitation: 5
-      },
-      {
-        day: 'Sonntag',
-        date: '03.11.',
-        temperature: 21,
-        condition: 'Heiter',
-        icon: '/images/icon-sunny.webp',
-        humidity: 55,
-        windSpeed: 8,
-        precipitation: 0
-      }
-    ];
+    const forecast = this.generateForecastFromTomorrow();
+    return of(forecast);
+  }
 
-    return of(dummyForecast);
+  /**
+   * Generiert 7-Tage Forecast ab morgen
+   */
+  private generateForecastFromTomorrow(): DailyForecast[] {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    
+    const weekdays = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+    const weatherConditions = [
+      { condition: 'Sonnig', icon: '/images/icon-sunny.webp' },
+      { condition: 'Teilweise bewölkt', icon: '/images/icon-partly-cloudy.webp' },
+      { condition: 'Bewölkt', icon: '/images/icon-overcast.webp' },
+      { condition: 'Regnerisch', icon: '/images/icon-rain.webp' },
+      { condition: 'Nieselregen', icon: '/images/icon-drizzle.webp' }
+    ];
+    
+    const forecast: DailyForecast[] = [];
+    
+    for (let i = 0; i < 7; i++) {
+      const currentDate = new Date(tomorrow);
+      currentDate.setDate(tomorrow.getDate() + i);
+      
+      const randomWeather = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
+      
+      forecast.push({
+        day: weekdays[currentDate.getDay()],
+        date: currentDate.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit' }),
+        temperature: Math.floor(Math.random() * 15) + 15, // 15-30°C
+        condition: randomWeather.condition,
+        icon: randomWeather.icon,
+        humidity: Math.floor(Math.random() * 30) + 50, // 50-80%
+        windSpeed: Math.floor(Math.random() * 15) + 5, // 5-20 m/s
+        precipitation: Math.floor(Math.random() * 100) // 0-100%
+      });
+    }
+    
+    return forecast;
   }
 
   /**

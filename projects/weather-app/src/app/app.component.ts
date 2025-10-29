@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
   }
 
   /**
-   * Lädt die Dummy-Daten für die 7-Tage-Vorhersage
+   * Lädt die Daten für die 7-Tage-Vorhersage ab morgen über den Service
    */
   loadDailyForecast() {
     this.dailyForecastService.getDailyForecast().subscribe({
