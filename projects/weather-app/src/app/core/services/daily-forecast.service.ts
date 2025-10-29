@@ -35,7 +35,7 @@ export class DailyForecastService {
       
       forecast.push({
         day: weekdays[currentDate.getDay()],
-        temperature: Math.floor(Math.random() * 15) + 15,
+        temperature: Math.floor(Math.random() * 15) + 5,
         icon: this.getRandomWeatherIcon()
       });
     }
