@@ -1,1 +1,6 @@
-<p>dropdown works!</p>
+<section class="dropdown-main">
+    @for (day of weekdays; track day) {
+        <atomic-text [text]="day"></atomic-text>
+    }
+    <atomic-icon></atomic-icon>
+</section>
