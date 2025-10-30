@@ -48,7 +48,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    dummyForecast: [\n      { day: 'Monday', date: '2025-10-28', temperature: 20, condition: 'Sunny', icon: '/images/icon-sunny.webp', humidity: 65, windSpeed: 10, precipitation: 0 },\n      { day: 'Tuesday', date: '2025-10-29', temperature: 18, condition: 'Cloudy', icon: '/images/icon-overcast.webp', humidity: 70, windSpeed: 15, precipitation: 0 },\n      { day: 'Wednesday', date: '2025-10-30', temperature: 22, condition: 'Rainy', icon: '/images/icon-rain.webp', humidity: 85, windSpeed: 12, precipitation: 5 },\n      { day: 'Thursday', date: '2025-10-31', temperature: 19, condition: 'Windy', icon: '/images/icon-partly-cloudy.webp', humidity: 60, windSpeed: 20, precipitation: 0 },\n      { day: 'Friday', date: '2025-11-01', temperature: 21, condition: 'Sunny', icon: '/images/icon-sunny.webp', humidity: 55, windSpeed: 8, precipitation: 0 },\n    ],\n  }\n}"
+                "defaultValue": "{\n  args: {\n    headingText: '7-Tage Wettervorhersage',\n    level: 2,\n    dummyForecast: [\n      { day: 'Montag', temperature: 20, icon: '/images/icon-sunny.webp' },\n      { day: 'Dienstag', temperature: 18, icon: '/images/icon-overcast.webp' },\n      { day: 'Mittwoch', temperature: 22, icon: '/images/icon-rain.webp' },\n      { day: 'Donnerstag', temperature: 19, icon: '/images/icon-partly-cloudy.webp' },\n      { day: 'Freitag', temperature: 21, icon: '/images/icon-sunny.webp' },\n    ],\n  }\n}"
             },
             {
                 "name": "DefaultButton",
@@ -174,6 +174,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<DropdownComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -221,6 +231,16 @@
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
+            },
+            {
                 "name": "Short",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -239,6 +259,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    headingText: 'This is a Subheadline',\n    level: 3,\n    className: '',\n  },\n}"
+            },
+            {
+                "name": "WaDropdown",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n  },\n}"
             },
             {
                 "name": "WeatherAppButton",
@@ -268,7 +298,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    placeholder: 'Search for a city...',\n    buttonText: 'Search'\n  },\n}"
+                "defaultValue": "{\n  args: {\n    placeholder: 'Suche nach einer Stadt...',\n    buttonText: 'Suchen'\n  },\n}"
             },
             {
                 "name": "WeatherAppStyle",
@@ -332,6 +362,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<DropdownComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -549,7 +590,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    dummyForecast: [\n      { day: 'Monday', date: '2025-10-28', temperature: 20, condition: 'Sunny', icon: '/images/icon-sunny.webp', humidity: 65, windSpeed: 10, precipitation: 0 },\n      { day: 'Tuesday', date: '2025-10-29', temperature: 18, condition: 'Cloudy', icon: '/images/icon-overcast.webp', humidity: 70, windSpeed: 15, precipitation: 0 },\n      { day: 'Wednesday', date: '2025-10-30', temperature: 22, condition: 'Rainy', icon: '/images/icon-rain.webp', humidity: 85, windSpeed: 12, precipitation: 5 },\n      { day: 'Thursday', date: '2025-10-31', temperature: 19, condition: 'Windy', icon: '/images/icon-partly-cloudy.webp', humidity: 60, windSpeed: 20, precipitation: 0 },\n      { day: 'Friday', date: '2025-11-01', temperature: 21, condition: 'Sunny', icon: '/images/icon-sunny.webp', humidity: 55, windSpeed: 8, precipitation: 0 },\n    ],\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    headingText: '7-Tage Wettervorhersage',\n    level: 2,\n    dummyForecast: [\n      { day: 'Montag', temperature: 20, icon: '/images/icon-sunny.webp' },\n      { day: 'Dienstag', temperature: 18, icon: '/images/icon-overcast.webp' },\n      { day: 'Mittwoch', temperature: 22, icon: '/images/icon-rain.webp' },\n      { day: 'Donnerstag', temperature: 19, icon: '/images/icon-partly-cloudy.webp' },\n      { day: 'Freitag', temperature: 21, icon: '/images/icon-sunny.webp' },\n    ],\n  }\n}"
                 },
                 {
                     "name": "meta",
@@ -648,6 +689,38 @@
                     "defaultValue": "{\n  args: {\n    placeholder: 'Search for a place...',\n    type: \"textarea\",\n    variant: \"wa-search\",\n  },\n}"
                 }
             ],
+            "projects/atomic-components/src/stories/molecules/dropdown.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<DropdownComponent>",
+                    "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
+                },
+                {
+                    "name": "WaDropdown",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n  },\n}"
+                }
+            ],
             "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
                 {
                     "name": "meta",
@@ -667,7 +740,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    placeholder: 'Search for a city...',\n    buttonText: 'Search'\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Suche nach einer Stadt...',\n    buttonText: 'Suchen'\n  },\n}"
                 }
             ],
             "projects/atomic-components/.storybook/preview.ts": [
@@ -732,6 +805,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/dropdown.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<DropdownComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1023,6 +1109,46 @@
             },
             {
                 "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WaDropdown",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

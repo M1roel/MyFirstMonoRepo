@@ -1,6 +1,23 @@
-<section class="dropdown-main">
-    @for (day of weekdays; track day) {
-        <atomic-text [text]="day"></atomic-text>
+<section [ngClass]="['dropdown-main', variant]" class="">
+    
+    <div class="dropdown-trigger" (click)="toggleDropdown()">
+        <atomic-text [text]="selectedOption || 'Montag'"></atomic-text>
+        <atomic-icon 
+            [iconSrc]="'/images/icon-dropdown.svg'"
+            [ngClass]="{ 'rotated': isOpen }">
+        </atomic-icon>
+    </div>
+
+    @if (isOpen) {
+        <div class="dropdown-options">
+            @for (weekday of options; track weekday) {
+                <div 
+                    class="dropdown-option" 
+                    (click)="selectWeekday(weekday)">
+                    <atomic-text [text]="weekday"></atomic-text>
+                </div>
+            }
+        </div>
     }
-    <atomic-icon></atomic-icon>
+    
 </section>

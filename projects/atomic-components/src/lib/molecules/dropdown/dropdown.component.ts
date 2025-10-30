@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TextComponent, IconComponent } from '../../../public-api';
 import { CommonModule } from '@angular/common';
 
@@ -9,8 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './dropdown.component.scss'
 })
 export class DropdownComponent {
-  
-  weekdays: string[] = [
+
+  @Input() variant: 'primary' | 'wa-dropdown' = 'primary';
+  @Input() options: string[] = [
     'Montag',
     'Dienstag', 
     'Mittwoch',
@@ -19,5 +20,24 @@ export class DropdownComponent {
     'Samstag',
     'Sonntag'
   ];
+  @Output() selectionChange = new EventEmitter<string>();
 
+  selectedOption: string = '';
+  isOpen: boolean = false;
+
+  toggleDropdown(): void {
+    this.isOpen = !this.isOpen;
+  }
+
+  selectWeekday(weekday: string): void {
+    this.selectedOption = weekday;
+    this.isOpen = false;
+    this.selectionChange.emit(weekday);
+  }
+
+  selectOption(option: string): void {
+    this.selectedOption = option;
+    this.isOpen = false;
+    this.selectionChange.emit(option);
+  }
 }
