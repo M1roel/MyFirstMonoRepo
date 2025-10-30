@@ -1,6 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { InputComponent } from '../../atoms/input/input.component';
-import { ButtonComponent } from '../../atoms/button/button.component';
+import { InputComponent, ButtonComponent } from '../../../public-api';
 
 @Component({
   selector: 'atomic-search-bar',

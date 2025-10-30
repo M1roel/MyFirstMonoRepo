@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { InfoCardComponent } from '../../molecules/info-card/info-card.component';
-import { HeadlineComponent } from '../../../public-api';
+import { InfoCardComponent, HeadlineComponent } from '../../../public-api';
 import { DailyForecast } from '../../../../../weather-app/src/app/core/models/daily-forecast.model';
 
 @Component({

@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TextComponent } from '../../atoms/text/text.component';
-import { IconComponent } from "../../atoms/icon/icon.component";
+import { TextComponent, IconComponent } from '../../../public-api';
 
 @Component({
   selector: 'atomic-info-card',
