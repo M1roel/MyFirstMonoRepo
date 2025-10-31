@@ -1,1 +1,16 @@
-<p>hourly-forecast works!</p>
+<section class="hourly-forecast-main">
+    <div class="hourly-forecast-head">
+        <atomic-text [text]="label"></atomic-text>
+        <atomic-dropdown
+            [options]="['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']"
+            [variant]="'wa-dropdown'">
+        </atomic-dropdown>
+    </div>
+    <div class="hourly-forecast-cards">
+        <atomic-info-card
+            *ngFor="let hour of [ '1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM', '7 AM', '8 AM' ]"
+            [title]="hour"
+            [icon]="'sunny'">
+        </atomic-info-card>
+    </div>
+</section>
