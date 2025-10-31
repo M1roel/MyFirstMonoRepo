@@ -7,10 +7,14 @@
         </atomic-dropdown>
     </div>
     <div class="hourly-forecast-cards">
-        <atomic-info-card
-            *ngFor="let hour of [ '1 AM', '2 AM', '3 AM', '4 AM', '5 AM', '6 AM', '7 AM', '8 AM' ]"
-            [title]="hour"
-            [icon]="'sunny'">
-        </atomic-info-card>
+            @for (hour of hourlyData.slice(0, maxHours); track hour) {
+                <atomic-info-card
+                    class="hourly-forecast-item"
+                    [label]="hour.time"
+                    [value]="hour.temperature.toString()"
+                    [unit]="'°C'"
+                    [icon]="hour.icon">
+                </atomic-info-card>
+            }
     </div>
 </section>

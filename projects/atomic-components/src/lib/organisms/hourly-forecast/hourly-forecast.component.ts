@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DropdownComponent, InfoCardComponent, TextComponent } from '../../../public-api';
+import { HourlyForecast } from '../../../../../weather-app/src/app/core/models/hourly-forecast.model';
 
 @Component({
   selector: 'atomic-hourly-forecast',
@@ -10,4 +11,6 @@ import { DropdownComponent, InfoCardComponent, TextComponent } from '../../../pu
 })
 export class HourlyForecastComponent {
   @Input() label: string = 'Stündliche Vorhersage';
+  @Input() hourlyData: HourlyForecast[] = [];
+  @Input() maxHours: number = 12;
 }
