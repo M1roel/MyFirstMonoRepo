@@ -178,7 +178,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<DropdownComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n  },\n}"
+                "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n    options: {\n      control: { type: 'object' },\n    },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -231,16 +231,6 @@
                 "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
             },
             {
-                "name": "Primary",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
-            },
-            {
                 "name": "Short",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -268,7 +258,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n    options: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],\n  },\n}"
             },
             {
                 "name": "WeatherAppButton",
@@ -698,17 +688,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<DropdownComponent>",
-                    "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n  },\n}"
-                },
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
+                    "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n    options: {\n      control: { type: 'object' },\n    },\n  },\n}"
                 },
                 {
                     "name": "WaDropdown",
@@ -718,7 +698,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'wa-dropdown',\n    options: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],\n  },\n}"
                 }
             ],
             "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
@@ -1123,16 +1103,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Primary",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
