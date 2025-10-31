@@ -45,7 +45,7 @@ export class HourlyForecastService {
    * Generiert eine zufällige Temperatur zwischen 5 und 25 Grad
    */
   private getRandomTemperature(): number {
-    return Math.floor(Math.random() * 21) + 5; // 5-25°C
+    return Math.floor(Math.random() * 21) + 5;
   }
 
   /**
@@ -60,14 +60,14 @@ export class HourlyForecastService {
    * Generiert zufällige Luftfeuchtigkeit zwischen 30 und 95%
    */
   private getRandomHumidity(): number {
-    return Math.floor(Math.random() * 66) + 30; // 30-95%
+    return Math.floor(Math.random() * 66) + 30;
   }
 
   /**
    * Generiert zufällige Windgeschwindigkeit zwischen 0 und 20 m/s
    */
   private getRandomWindSpeed(): number {
-    return Math.floor(Math.random() * 21); // 0-20 m/s
+    return Math.floor(Math.random() * 21);
   }
 
   /**
