@@ -34,5 +34,9 @@
     [level]="2"
     [dummyForecast]="dummyForecast">
   </atomic-daily-forecast>
-  <atomic-hourly-forecast></atomic-hourly-forecast>
+  <atomic-hourly-forecast 
+    [label]="'Stündliche Vorhersage'"
+    [hourlyData]="hourlyForecast"
+    [maxHours]="12">
+  </atomic-hourly-forecast>
 </section>

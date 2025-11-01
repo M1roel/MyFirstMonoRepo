@@ -9,6 +9,8 @@ import { DailyForecastComponent } from '../../../atomic-components/src/lib/organ
 import { DailyForecast } from './core/models/daily-forecast.model';
 import { DailyForecastService } from './core/services/daily-forecast.service';
 import { HourlyForecastComponent } from '../../../atomic-components/src/lib/organisms/hourly-forecast/hourly-forecast.component';
+import { HourlyForecast } from './core/models/hourly-forecast.model';
+import { HourlyForecastService } from './core/services/hourly-forecast.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -32,8 +34,9 @@ export class AppComponent implements OnInit {
   weatherIcon: string = '';
   isLoading: boolean = false;
   dummyForecast: DailyForecast[] = [];
+  hourlyForecast: HourlyForecast[] = [];
 
-  constructor(private fetchWeatherService: FetchWeatherService, private dailyForecastService: DailyForecastService) {}
+  constructor(private fetchWeatherService: FetchWeatherService, private dailyForecastService: DailyForecastService, private hourlyForecastService: HourlyForecastService) {}
 
   get visibilityInKm(): string {
     return (this.visibility / 1000).toFixed(1);
@@ -42,6 +45,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.onSearch('Berlin');
     this.loadDailyForecast();
+    this.loadHourlyForecast();
   }
 
   /**
@@ -54,6 +58,20 @@ export class AppComponent implements OnInit {
       },
       error: (error: any) => {
         console.error('Fehler beim Laden der Vorhersage:', error);
+      }
+    });
+  }
+
+  /**
+   * Lädt die stündlichen Wetterdaten über den Service
+   */
+  loadHourlyForecast() {
+    this.hourlyForecastService.getHourlyForecast().subscribe({
+      next: (forecast: HourlyForecast[]) => {
+        this.hourlyForecast = forecast;
+      },
+      error: (error: any) => {
+        console.error('Fehler beim Laden der stündlichen Vorhersage:', error);
       }
     });
   }

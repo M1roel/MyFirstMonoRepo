@@ -1,0 +1,31 @@
+@use '../../../variables' as v;
+
+.hourly-forecast-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 500px;
+}
+
+.hourly-forecast-head {
+    align-items: center;
+    color: v.$wa-color-neutral-0;
+    display: flex;
+    flex-direction: row;
+}
+
+.hourly-forecast-head atomic-text {
+    margin-right: 8px;
+}
+
+.hourly-forecast-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.hourly-forecast-item {
+    flex-shrink: 0;
+}
