@@ -1,0 +1,55 @@
+@use '../../../variables' as v;
+
+.hourly-card-main {
+    align-items: center;
+    background-color: v.$wa-color-neutral-700;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'DM Sans', sans-serif;
+    gap: 8px;
+    height: 40px;
+    justify-content: space-between;
+    padding: 10px 12px 10px 16px;
+    width: 283px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-left atomic-text {
+    color: v.$wa-color-neutral-200;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+.card-left atomic-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.card-right atomic-text:first-child {
+    color: v.$wa-color-neutral-0;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+.card-right atomic-text:last-child {
+    color: v.$wa-color-neutral-200;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 100%;
+}

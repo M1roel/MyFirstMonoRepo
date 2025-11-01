@@ -8,13 +8,13 @@
     </div>
     <div class="hourly-forecast-cards">
             @for (hour of hourlyData.slice(0, maxHours); track hour) {
-                <atomic-info-card
+                <atomic-hourly-card
                     class="hourly-forecast-item"
                     [label]="hour.time"
                     [value]="hour.temperature.toString()"
                     [unit]="'°C'"
                     [icon]="hour.icon">
-                </atomic-info-card>
+                </atomic-hourly-card>
             }
     </div>
 </section>

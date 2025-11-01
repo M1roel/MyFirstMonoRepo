@@ -1,10 +1,13 @@
 @use '../../../variables' as v;
 
 .hourly-forecast-main {
+    background-color: v.$wa-color-neutral-800;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 500px;
+    padding: 16px 20px;
+    width: 315px;
 }
 
 .hourly-forecast-head {
@@ -19,9 +22,11 @@
 }
 
 .hourly-forecast-cards {
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 16px;
+    justify-content: center;
     overflow-x: auto;
     flex-wrap: wrap;
 }
