@@ -12,6 +12,7 @@ export * from './lib/atoms/icon/icon.component';
 export * from './lib/atoms/headline/headline.component';
 export * from './lib/atoms/input/input.component';
 export * from './lib/atoms/date/date.component';
+export * from './lib/atoms/image/image.component';
 
 // Molecules
 export * from './lib/molecules/info-card/info-card.component';
@@ -23,3 +24,6 @@ export * from './lib/molecules/hourly-card/hourly-card.component';
 // Organisms
 export * from './lib/organisms/daily-forecast/daily-forecast.component';
 export * from './lib/organisms/hourly-forecast/hourly-forecast.component';
+
+// Templates
+export * from './lib/templates/hero-section/hero-section.component';
