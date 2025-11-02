@@ -28,5 +28,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/fine-dining/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/fine-dining/tsconfig.spec.json"
+    }
+  ]
 }
