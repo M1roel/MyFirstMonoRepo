@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { HeadlineComponent, ImageComponent } from '../../../public-api';
+import { HeadlineComponent } from '../../atoms/headline/headline.component';
+import { ImageComponent } from '../../atoms/image/image.component';
 
 @Component({
   selector: 'atomic-hero-section',

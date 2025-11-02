@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { TextComponent, IconComponent } from '../../../public-api';
+import { TextComponent } from '../../atoms/text/text.component';
+import { IconComponent } from '../../atoms/icon/icon.component';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DropdownComponent, HourlyCardComponent, TextComponent } from '../../../public-api';
+import { DropdownComponent } from '../../molecules/dropdown/dropdown.component';
+import { HourlyCardComponent } from '../../molecules/hourly-card/hourly-card.component';
+import { TextComponent } from '../../atoms/text/text.component';
 import { HourlyForecast } from '../../../../../weather-app/src/app/core/models/hourly-forecast.model';
 
 @Component({

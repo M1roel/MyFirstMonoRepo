@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { TextComponent, DateComponent, IconComponent } from '../../../public-api';
+import { TextComponent } from '../../atoms/text/text.component';
+import { DateComponent } from '../../atoms/date/date.component';
+import { IconComponent } from '../../atoms/icon/icon.component';
 
 @Component({
   selector: 'atomic-forecast-card',
