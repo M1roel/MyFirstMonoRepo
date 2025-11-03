@@ -1,23 +1,23 @@
 <section class="hero-section-main">
     <div class="hero-left">
-        <atomic-headline
-            [headingText]="headingText1"
-            [level]="level1">
-        </atomic-headline>
-        <atomic-headline
-            [headingText]="headingText2"
-            [level]="level2">
-        </atomic-headline>
-        <atomic-headline
-            [headingText]="headingText3"
-            [level]="level3">
-        </atomic-headline>
+        @for (heading of headings; track heading.text) {
+            <atomic-headline
+                [headingText]="heading.text"
+                [level]="heading.level">
+            </atomic-headline>
+        }
     </div>
     <div class="hero-center">
-        <atomic-image [src]="src1" [alt]="alt1"></atomic-image>
+        @if (images[0]) {
+            <atomic-image [src]="images[0].src" [alt]="images[0].alt"></atomic-image>
+        }
     </div>    
     <div class="hero-right">
-        <atomic-image [src]="src2" [alt]="alt2"></atomic-image>
-        <atomic-image [src]="src3" [alt]="alt3"></atomic-image>
+        @if (images[1]) {
+            <atomic-image [src]="images[1].src" [alt]="images[1].alt"></atomic-image>
+        }
+        @if (images[2]) {
+            <atomic-image [src]="images[2].src" [alt]="images[2].alt"></atomic-image>
+        }
     </div>
 </section>
