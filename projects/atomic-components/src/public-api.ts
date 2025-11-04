@@ -26,4 +26,5 @@ export * from './lib/atoms/image/image.component';
 // export * from './lib/organisms/hourly-forecast/hourly-forecast.component';
 
 // Templates
-export * from './lib/templates/hero-section/hero-section.component';
+export * from './lib/templates/hero-section-split/hero-section-split.component';
+export * from './lib/templates/philosophy-section-split/philosophy-section-split.component';

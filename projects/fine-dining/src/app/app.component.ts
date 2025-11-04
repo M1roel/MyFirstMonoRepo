@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroSectionComponent } from 'atomic-components';
+import { HeroSectionSplitComponent } from 'atomic-components';
 
 interface HeroHeading {
   text: string;
@@ -13,7 +13,7 @@ interface HeroImage {
 
 @Component({
   selector: 'app-root',
-  imports: [HeroSectionComponent],
+  imports: [HeroSectionSplitComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -14,12 +14,12 @@ export interface HeroImage {
 }
 
 @Component({
-  selector: 'atomic-hero-section',
+  selector: 'atomic-hero-section-split',
   imports: [HeadlineComponent, ImageComponent, CommonModule],
-  templateUrl: './hero-section.component.html',
-  styleUrl: './hero-section.component.scss'
+  templateUrl: './hero-section-split.component.html',
+  styleUrl: './hero-section-split.component.scss'
 })
-export class HeroSectionComponent {
+export class HeroSectionSplitComponent {
   @Input() headings: HeroHeading[] = [];
   @Input() images: HeroImage[] = [];
 }
