@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroSectionSplitComponent } from 'atomic-components';
+import { HeroSectionSplitComponent, PhilosophyImage, PhilosophySectionSplitComponent } from 'atomic-components';
 
 interface HeroHeading {
   text: string;
@@ -13,7 +13,8 @@ interface HeroImage {
 
 @Component({
   selector: 'app-root',
-  imports: [HeroSectionSplitComponent],
+  standalone: true,
+  imports: [HeroSectionSplitComponent, PhilosophySectionSplitComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -24,9 +25,14 @@ export class AppComponent {
     { text: 'FINE DINING', level: 3 }
   ];
 
-  images: HeroImage[] = [
+  heroImages: HeroImage[] = [
     { src: 'images/01.png', alt: 'Exquisite Culinary Art' },
     { src: 'images/02.png', alt: 'Lumière Restaurant' },
     { src: 'images/03.png', alt: 'Fine Dining Experience' }
+  ];
+
+  philosophyImages: PhilosophyImage[] = [
+    { src: 'images/chef2.png', alt: 'Chef of Exquisite Culinary Art' },
+    { src: 'images/04.png', alt: 'A beautifully plated gourmet dish representing our philosophy.' }
   ];
 }

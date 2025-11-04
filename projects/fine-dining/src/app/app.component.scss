@@ -1,0 +1,6 @@
+@use '../../../atomic-components/src/variables' as v;
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+}

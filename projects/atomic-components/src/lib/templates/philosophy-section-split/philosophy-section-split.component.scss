@@ -1,0 +1,58 @@
+@use '../../../variables' as v;
+
+.philosophy-section-split-main {
+    color: v.$fd-color-font-light;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100dvh;
+    padding: 24px;
+    width: 100%;
+}
+
+.philosophy-left {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    atomic-text {
+        font-size: 2rem;
+    }
+
+    ::ng-deep atomic-image {
+        display: block;
+        max-width: 300px;
+        max-height: 300px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.philosophy-center {
+    align-items: flex-end;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+
+    atomic-text {
+        font-size: 1.5rem;
+    }
+}
+
+.philosophy-right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16px;
+}

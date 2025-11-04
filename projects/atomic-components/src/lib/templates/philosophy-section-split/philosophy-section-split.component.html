@@ -1,1 +1,24 @@
-<p>philosophy-section-split works!</p>
+<section class="philosophy-section-split-main">
+    <div class="philosophy-left">
+        <atomic-headline
+            [headingText]="headingText"
+            [level]="4">
+        </atomic-headline>
+        @if (images[0]) {
+            <atomic-image [src]="images[0].src" [alt]="images[0].alt"></atomic-image>
+        }
+        <atomic-text
+            [text]="descriptionText">
+        </atomic-text>
+    </div>
+    <div class="philosophy-center">
+        <atomic-text
+            [text]="subText">
+        </atomic-text>
+    </div>
+    <div class="philosophy-right">
+        @if (images[1]) {
+            <atomic-image [src]="images[1].src" [alt]="images[1].alt"></atomic-image>
+        }
+    </div>
+</section>
