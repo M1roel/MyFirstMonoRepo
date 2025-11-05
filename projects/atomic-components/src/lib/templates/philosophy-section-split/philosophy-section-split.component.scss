@@ -1,6 +1,7 @@
 @use '../../../variables' as v;
 
 .philosophy-section-split-main {
+    background-color: v.$fd-color-bg-light;
     color: v.$fd-color-font-light;
     display: flex;
     flex-direction: row;
