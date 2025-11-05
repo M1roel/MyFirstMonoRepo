@@ -32,7 +32,13 @@ export class AppComponent {
   ];
 
   philosophyImages: PhilosophyImage[] = [
-    { src: 'images/chef5.png', alt: 'Chef of Exquisite Culinary Art' },
+    { src: 'images/chef.png', alt: 'Chef of Exquisite Culinary Art' },
     { src: 'images/04.png', alt: 'A beautifully plated gourmet dish representing our philosophy.' }
   ];
+
+  philosophyContent = {
+    heading: 'CULINARY PHILOSOPHY',
+    description: 'My culinary philosophy embraces the harmony of flavors and presentation.',
+    subText: 'With over a decade of experience, I blend traditional techniques with modern flavors, creating memorable dining experiences that celebrate the essence of fine cuisine.'
+  };
 }
