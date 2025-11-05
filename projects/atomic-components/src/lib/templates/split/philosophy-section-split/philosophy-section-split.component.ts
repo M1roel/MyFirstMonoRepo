@@ -1,9 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ImageComponent } from '../../atoms/image/image.component';
-import { TextComponent } from '../../atoms/text/text.component';
-import { HeadlineComponent } from '../../atoms/headline/headline.component';
-import { HeroImage } from '../hero-section-split/hero-section-split.component';
+import { ImageComponent } from '../../../atoms/image/image.component';
+import { TextComponent } from '../../../atoms/text/text.component';
+import { HeadlineComponent } from '../../../atoms/headline/headline.component';
 
 export interface PhilosophyImage {
   src: string;

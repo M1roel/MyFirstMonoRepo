@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { HeadlineComponent } from '../../atoms/headline/headline.component';
-import { ImageComponent } from '../../atoms/image/image.component';
+import { HeadlineComponent } from '../../../atoms/headline/headline.component';
+import { ImageComponent } from '../../../atoms/image/image.component';
 import { CommonModule } from '@angular/common';
 
 export interface HeroHeading {
