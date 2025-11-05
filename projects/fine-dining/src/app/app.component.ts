@@ -32,7 +32,7 @@ export class AppComponent {
   ];
 
   philosophyImages: PhilosophyImage[] = [
-    { src: 'images/chef2.png', alt: 'Chef of Exquisite Culinary Art' },
+    { src: 'images/chef5.png', alt: 'Chef of Exquisite Culinary Art' },
     { src: 'images/04.png', alt: 'A beautifully plated gourmet dish representing our philosophy.' }
   ];
 }

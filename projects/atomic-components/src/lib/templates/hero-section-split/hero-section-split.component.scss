@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100dvh;
+    min-height: 100dvh;
+    padding: 24px;
     width: 100%;
 }
 
@@ -15,7 +16,6 @@
     flex: 1;
     flex-direction: column;
     font-size: 2rem;
-    justify-content: end;
 }
 
 .hero-center {
@@ -39,15 +39,25 @@
         flex-wrap: nowrap;
     }
 
+    .hero-left,
     .hero-center,
     .hero-right {
         width: 100%;
-        
+
+        ::ng-deep atomic-headline {
+
+            h1,
+            h2,
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
         ::ng-deep atomic-image {
             display: block;
             width: 100%;
             height: auto;
-            
+
             img {
                 display: block;
                 width: 100%;
