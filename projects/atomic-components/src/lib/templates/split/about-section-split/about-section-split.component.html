@@ -1,1 +1,13 @@
-<p>about-section-split works!</p>
+<section class="about-section-main">
+    <div class="about-left">
+        @if (images[0]) {
+            <atomic-image [src]="images[0].src" [alt]="images[0].alt"></atomic-image>
+        }
+    </div>
+    <div class="about-center">
+        <atomic-text>{{ text }}</atomic-text>
+    </div>
+    <div class="about-right">
+        <atomic-text>{{ text }}</atomic-text>
+    </div>
+</section>
