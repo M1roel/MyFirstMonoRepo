@@ -3,21 +3,20 @@
         @for (heading of headings; track heading.text) {
             <atomic-headline
                 [headingText]="heading.text"
-                [level]="heading.level">
-            </atomic-headline>
+                [level]="heading.level" />
         }
     </div>
     <div class="hero-center">
         @if (images[0]) {
-            <atomic-image [src]="images[0].src" [alt]="images[0].alt"></atomic-image>
+            <atomic-image [src]="images[0].src" [alt]="images[0].alt" />
         }
     </div>    
     <div class="hero-right">
         @if (images[1]) {
-            <atomic-image [src]="images[1].src" [alt]="images[1].alt"></atomic-image>
+            <atomic-image [src]="images[1].src" [alt]="images[1].alt" />
         }
         @if (images[2]) {
-            <atomic-image [src]="images[2].src" [alt]="images[2].alt"></atomic-image>
+            <atomic-image [src]="images[2].src" [alt]="images[2].alt" />
         }
     </div>
 </section>

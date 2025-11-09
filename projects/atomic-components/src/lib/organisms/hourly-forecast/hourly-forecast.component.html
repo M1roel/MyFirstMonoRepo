@@ -1,10 +1,9 @@
 <section class="hourly-forecast-main">
     <div class="hourly-forecast-head">
-        <atomic-text [text]="label"></atomic-text>
+        <atomic-text [text]="label" />
         <atomic-dropdown
             [options]="['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']"
-            [variant]="'wa-dropdown'">
-        </atomic-dropdown>
+            [variant]="'wa-dropdown'" />
     </div>
     <div class="hourly-forecast-cards">
             @for (hour of hourlyData.slice(0, maxHours); track hour) {
@@ -13,8 +12,7 @@
                     [label]="hour.time"
                     [value]="hour.temperature.toString()"
                     [unit]="'°C'"
-                    [icon]="hour.icon">
-                </atomic-hourly-card>
+                    [icon]="hour.icon" />
             }
     </div>
 </section>

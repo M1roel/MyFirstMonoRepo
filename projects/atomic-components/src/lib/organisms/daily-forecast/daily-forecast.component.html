@@ -2,8 +2,7 @@
 <atomic-headline 
     [headingText]="headingText"
     [level]="level" 
-    class="daily-forecast-title">
-</atomic-headline>
+    class="daily-forecast-title" />
 <div class="daily-forecast-wrapper">
     @for (day of dummyForecast; track day.day) {
         <atomic-info-card 
@@ -11,8 +10,7 @@
             [label]="day.day"
             [value]="day.temperature.toString()"
             [unit]="'°C'"
-            [icon]="day.icon">
-        </atomic-info-card>
+            [icon]="day.icon" />
     }
 </div>
 </section>
