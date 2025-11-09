@@ -72,16 +72,16 @@
 
         ::ng-deep atomic-image {
             display: block;
-            width: 100%;
             height: auto;
+            width: 100%;
 
             img {
                 display: block;
-                width: 100%;
                 height: auto;
                 max-width: 100%;
                 object-fit: contain;
                 padding: 4px 8px;
+                width: 100%;
             }
         }
     }

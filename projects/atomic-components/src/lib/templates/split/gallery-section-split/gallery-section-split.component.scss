@@ -1,0 +1,54 @@
+@use '../../../../variables' as v;
+
+.gallery-section-main {
+    background-color: v.$fd-color-bg-light;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100dvh;
+    padding: 24px;
+    width: 100%;
+}
+
+.gallery-down {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+    margin-top: 80px;
+    padding: 0 24px;
+
+    atomic-text {
+        color: v.$fd-color-font-light;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .item-number {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .subtext {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    ::ng-deep atomic-image {
+            display: block;
+            height: auto;
+            width: 100%;
+
+            img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+                object-fit: contain;
+                padding: 4px 8px;
+                width: 100%;
+            }
+        }
+}
+
