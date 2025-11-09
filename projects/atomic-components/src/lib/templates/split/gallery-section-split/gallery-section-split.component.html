@@ -1,0 +1,14 @@
+<section class="gallery-section-main">
+    <atomic-headline
+            [headingText]="headingText"
+            [level]="4">
+        </atomic-headline>
+    @for (galleryItem of item; track galleryItem) {
+        <div class="gallery-item">
+            <atomic-text [text]="galleryItem.number"></atomic-text>
+            <atomic-image [src]="galleryItem.src" [alt]="galleryItem.alt"></atomic-image>
+            <atomic-text [text]="galleryItem.text"></atomic-text>
+            <atomic-text [text]="galleryItem.subtext"></atomic-text>
+        </div>
+    }
+</section>

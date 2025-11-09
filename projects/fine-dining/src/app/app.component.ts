@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroSectionSplitComponent, PhilosophyImage, PhilosophySectionSplitComponent, AboutSectionSplitComponent } from 'atomic-components';
+import { HeroSectionSplitComponent, PhilosophyImage, PhilosophySectionSplitComponent, AboutSectionSplitComponent, GallerySectionSplitComponent } from 'atomic-components';
 
 interface HeroHeading {
   text: string;
@@ -14,7 +14,7 @@ interface HeroImage {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeroSectionSplitComponent, PhilosophySectionSplitComponent, AboutSectionSplitComponent],
+  imports: [HeroSectionSplitComponent, PhilosophySectionSplitComponent, AboutSectionSplitComponent, GallerySectionSplitComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -59,5 +59,32 @@ export class AppComponent {
   aboutImage = {
     src: 'images/06.png',
     alt: 'About Lumière Restaurant'
+  };
+
+  galleryContent = {
+    headingText: 'GALLERY DISPLAY',
+    items: [
+      {
+        number: '01',
+        src: 'images/07.png',
+        alt: 'Gourmet Dish 1',
+        text: 'Elegant Dining',
+        subtext: 'A refined setting with exquisite decor elements.'
+      },
+      {
+        number: '02',
+        src: 'images/08.png',
+        alt: 'Gourmet Dish 2',
+        text: 'Intimate Corner',
+        subtext: 'A cozy spot for private dining experiences.'
+      },
+      {
+        number: '03',
+        src: 'images/09.png',
+        alt: 'Gourmet Dish 3',
+        text: 'Spacious Ambience',
+        subtext: 'Open layout with sophisticated design elements.'
+      }
+    ]
   };
 }
