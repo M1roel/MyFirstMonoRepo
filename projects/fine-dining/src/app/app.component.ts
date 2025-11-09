@@ -48,11 +48,21 @@ export class AppComponent {
     backgroundItems: [
       'Bachelor of Culinary Arts from Le Cordon Bleu',
       '5 years of experience at a Michelin-starred restaurant',
+      'Advanced training in French and Italian cuisine',
+      'Certified Sommelier with expertise in wine pairing',
+      'Specialized in molecular gastronomy techniques',
+      'Guest chef at prestigious culinary institutes',
+      'Winner of the Young Chef Award 2019'
     ],
     exhibitionItems: [
       'Participated in Culinary Showcase 2023',
       'Featured in the Gastronomy Festival 2024',
-      'Collaborative events with renowned local farms'
+      'Collaborative events with renowned local farms',
+      'Live cooking demonstration at Food & Wine Expo',
+      'Published in Gourmet Magazine\'s Chef Spotlight',
+      'Hosted exclusive tasting menu at charity gala',
+      'Featured speaker at International Culinary Summit',
+      'Artisan dinner series with local producers'
     ]
   };
 
