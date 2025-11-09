@@ -1,24 +1,7 @@
 <section class="main-page">
-<atomic-hero-section-split 
-    [headings]="headings"
-    [images]="heroImages">
-</atomic-hero-section-split>
-<atomic-philosophy-section-split
-    [headingText]="philosophyContent.heading"
-    [descriptionText]="philosophyContent.description"
-    [subText]="philosophyContent.subText"
-    [images]="philosophyImages">
-</atomic-philosophy-section-split>
-<atomic-about-section-split
-    [backgroundText]="aboutContent.backgroundText"
-    [backgroundItems]="aboutContent.backgroundItems"
-    [exhibitionText]="aboutContent.exhibitionText"
-    [exhibitionItems]="aboutContent.exhibitionItems"
-    [src]="aboutImage.src"
-    [alt]="aboutImage.alt">
-</atomic-about-section-split>
-<atomic-gallery-section-split
-    [headingText]="galleryContent.headingText"
-    [item]="galleryContent.items">
-</atomic-gallery-section-split>
+  <app-page-hero />
+  <app-page-philosophy />
+  <app-page-about />
+  <app-page-gallery />
+  <app-page-showcase />
 </section>
