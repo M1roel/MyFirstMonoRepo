@@ -26,74 +26,74 @@ export class AppComponent {
   ];
 
   heroImages: HeroImage[] = [
-    { src: 'images/01.png', alt: 'Exquisite Culinary Art' },
+    { src: 'images/01.png', alt: 'Erlesene Kochkunst' },
     { src: 'images/02.png', alt: 'Lumière Restaurant' },
-    { src: 'images/03.png', alt: 'Fine Dining Experience' }
+    { src: 'images/03.png', alt: 'Fine Dining Erlebnis' }
   ];
 
   philosophyImages: PhilosophyImage[] = [
-    { src: 'images/chef.png', alt: 'Chef of Exquisite Culinary Art' },
-    { src: 'images/04.png', alt: 'A beautifully plated gourmet dish representing our philosophy.' }
+    { src: 'images/chef.png', alt: 'Küchenchef der erlesenen Kochkunst' },
+    { src: 'images/04.png', alt: 'Ein wunderschön angerichtetes Gourmet-Gericht, das unsere Philosophie repräsentiert.' }
   ];
 
   philosophyContent = {
-    heading: 'CULINARY PHILOSOPHY',
-    description: 'My culinary philosophy embraces the harmony of flavors and presentation.',
-    subText: 'With over a decade of experience, I blend traditional techniques with modern flavors, creating memorable dining experiences that celebrate the essence of fine cuisine.'
+    heading: 'KULINARISCHE PHILOSOPHIE',
+    description: 'Meine kulinarische Philosophie vereint die Harmonie von Geschmack und Präsentation.',
+    subText: 'Mit über einem Jahrzehnt Erfahrung verbinde ich traditionelle Techniken mit modernen Aromen und schaffe unvergessliche kulinarische Erlebnisse, die die Essenz der gehobenen Küche zelebrieren.'
   };
 
   aboutContent = {
-    backgroundText: 'Background',
-    exhibitionText: 'Exhibition',
+    backgroundText: 'Hintergrund',
+    exhibitionText: 'Ausstellungen',
     backgroundItems: [
-      'Bachelor of Culinary Arts from Le Cordon Bleu',
-      '5 years of experience at a Michelin-starred restaurant',
-      'Advanced training in French and Italian cuisine',
-      'Certified Sommelier with expertise in wine pairing',
-      'Specialized in molecular gastronomy techniques',
-      'Guest chef at prestigious culinary institutes',
-      'Winner of the Young Chef Award 2019'
+      'Bachelor of Culinary Arts von Le Cordon Bleu',
+      '5 Jahre Erfahrung in einem Michelin-Stern Restaurant',
+      'Fortgeschrittene Ausbildung in französischer und italienischer Küche',
+      'Zertifizierter Sommelier mit Expertise in Weinbegleitung',
+      'Spezialisiert auf molekulare Gastronomie-Techniken',
+      'Gastkoch an renommierten Kochschulen',
+      'Gewinner des Young Chef Award 2019'
     ],
     exhibitionItems: [
-      'Participated in Culinary Showcase 2023',
-      'Featured in the Gastronomy Festival 2024',
-      'Collaborative events with renowned local farms',
-      'Live cooking demonstration at Food & Wine Expo',
-      'Published in Gourmet Magazine\'s Chef Spotlight',
-      'Hosted exclusive tasting menu at charity gala',
-      'Featured speaker at International Culinary Summit',
-      'Artisan dinner series with local producers'
+      'Teilnahme am Kulinarischen Showcase 2023',
+      'Präsentation beim Gastronomie-Festival 2024',
+      'Kooperationsveranstaltungen mit renommierten lokalen Höfen',
+      'Live-Kochvorführung bei der Food & Wine Expo',
+      'Veröffentlichung im Chef Spotlight des Gourmet Magazins',
+      'Exklusives Degustationsmenü bei einer Wohltätigkeitsgala',
+      'Hauptredner beim Internationalen Kulinarischen Gipfel',
+      'Handwerker-Dinner-Serie mit lokalen Produzenten'
     ]
   };
 
   aboutImage = {
     src: 'images/06.png',
-    alt: 'About Lumière Restaurant'
+    alt: 'Über das Lumière Restaurant'
   };
 
   galleryContent = {
-    headingText: 'GALLERY DISPLAY',
+    headingText: 'GALERIE',
     items: [
       {
         number: '01',
         src: 'images/07.png',
-        alt: 'Gourmet Dish 1',
-        text: 'Elegant Dining',
-        subtext: 'A refined setting with exquisite decor elements.'
+        alt: 'Gourmet-Gericht 1',
+        text: 'Elegantes Speisen',
+        subtext: 'Ein raffiniertes Ambiente mit erlesenen Dekorationselementen.'
       },
       {
         number: '02',
         src: 'images/08.png',
-        alt: 'Gourmet Dish 2',
-        text: 'Intimate Corner',
-        subtext: 'A cozy spot for private dining experiences.'
+        alt: 'Gourmet-Gericht 2',
+        text: 'Intime Ecke',
+        subtext: 'Ein gemütlicher Ort für private kulinarische Erlebnisse.'
       },
       {
         number: '03',
         src: 'images/09.png',
-        alt: 'Gourmet Dish 3',
-        text: 'Spacious Ambience',
-        subtext: 'Open layout with sophisticated design elements.'
+        alt: 'Gourmet-Gericht 3',
+        text: 'Großzügiges Ambiente',
+        subtext: 'Offenes Layout mit anspruchsvollen Designelementen.'
       }
     ]
   };
