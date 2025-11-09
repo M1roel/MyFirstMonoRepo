@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import { HeroSectionSplitComponent, PhilosophyImage, PhilosophySectionSplitComponent, AboutSectionSplitComponent, GallerySectionSplitComponent } from 'atomic-components';
-
-interface HeroHeading {
-  text: string;
-  level: number;
-}
-
-interface HeroImage {
-  src: string;
-  alt: string;
-}
+import { 
+  HeroSectionSplitComponent, 
+  HeroHeading, 
+  HeroImage,
+  PhilosophyImage, 
+  PhilosophySectionSplitComponent, 
+  AboutSectionSplitComponent, 
+  GallerySectionSplitComponent 
+} from 'atomic-components';
 
 @Component({
   selector: 'app-root',
