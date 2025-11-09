@@ -1,0 +1,88 @@
+@use '../../../../variables' as v;
+
+.about-section-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100dvh;
+    padding: 24px;
+    width: 100%;
+}
+
+.about-left {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.about-center {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 24px;
+
+    atomic-text {
+        color: v.$fd-color-font-light;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    atomic-list {
+        color: v.$fd-color-font-light;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+.about-right {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 24px;
+
+    atomic-text {
+        color: v.$fd-color-font-light;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    atomic-list {
+        color: v.$fd-color-font-light;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section-main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .about-left,
+    .about-center,
+    .about-right {
+        padding: 16px 0;
+        width: 100%;
+
+        ::ng-deep atomic-image {
+            display: block;
+            width: 100%;
+            height: auto;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+                object-fit: contain;
+                padding: 4px 8px;
+            }
+        }
+    }
+}

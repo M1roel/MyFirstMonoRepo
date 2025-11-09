@@ -1,0 +1,13 @@
+@if (type === 'unordered') {
+  <ul [class]="'list list-' + variant">
+    @for (item of items; track item) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+} @else {
+  <ol [class]="'list list-' + variant">
+    @for (item of items; track item) {
+      <li>{{ item }}</li>
+    }
+  </ol>
+}

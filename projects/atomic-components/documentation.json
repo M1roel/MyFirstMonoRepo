@@ -44,6 +44,16 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    items: ['Item 1', 'Item 2', 'Item 3'],\n    type: 'unordered',\n    variant: 'default'\n  }\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -174,6 +184,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ListComponent>",
+                "defaultValue": "{\n  title: 'Atoms/List',\n  component: ListComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    items: {\n      control: { type: 'object' },\n      description: 'Array of strings to be displayed as list items.'\n    },\n    type: {\n      control: { type: 'select', options: ['unordered', 'ordered'] },\n      description: 'Type of the list: unordered (ul) or ordered (ol).'\n    },\n    variant: {\n      control: { type: 'select', options: ['default', 'bullet', 'numbered', 'checkmark', 'dash'] },\n      description: 'Visual variant of the list.'\n    }\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -221,6 +241,16 @@
                 "defaultValue": "{\n  title: 'Organisms/Daily Forecast',\n  component: DailyForecastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    dummyForecast: { control: 'object' }\n  }\n}"
             },
             {
+                "name": "OrderedNumbered",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    items: ['First', 'Second', 'Third'],\n    type: 'ordered',\n    variant: 'numbered'\n  }\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -249,6 +279,26 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    headingText: 'This is a Subheadline',\n    level: 3,\n    className: '',\n  },\n}"
+            },
+            {
+                "name": "UnorderedCheckmark",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    items: ['Task A', 'Task B', 'Task C'],\n    type: 'unordered',\n    variant: 'checkmark'\n  }\n}"
+            },
+            {
+                "name": "UnorderedDash",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    items: ['Point One', 'Point Two', 'Point Three'],\n    type: 'unordered',\n    variant: 'dash'\n  }\n}"
             },
             {
                 "name": "WaDropdown",
@@ -352,6 +402,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<InputComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ListComponent>",
+                "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -571,6 +632,58 @@
                     "defaultValue": "{\n  title: 'Molecules/Info Card',\n  component: InfoCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    label: { control: 'text' },\n    value: { control: 'text' },\n    unit: { \n      control: 'select',\n      options: ['%', '°C', 'mm', 'km/h']\n    },\n  }\n}"
                 }
             ],
+            "projects/atomic-components/src/stories/atoms/list.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    items: ['Item 1', 'Item 2', 'Item 3'],\n    type: 'unordered',\n    variant: 'default'\n  }\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ListComponent>",
+                    "defaultValue": "{\n  title: 'Atoms/List',\n  component: ListComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    items: {\n      control: { type: 'object' },\n      description: 'Array of strings to be displayed as list items.'\n    },\n    type: {\n      control: { type: 'select', options: ['unordered', 'ordered'] },\n      description: 'Type of the list: unordered (ul) or ordered (ol).'\n    },\n    variant: {\n      control: { type: 'select', options: ['default', 'bullet', 'numbered', 'checkmark', 'dash'] },\n      description: 'Visual variant of the list.'\n    }\n  }\n}"
+                },
+                {
+                    "name": "OrderedNumbered",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    items: ['First', 'Second', 'Third'],\n    type: 'ordered',\n    variant: 'numbered'\n  }\n}"
+                },
+                {
+                    "name": "UnorderedCheckmark",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    items: ['Task A', 'Task B', 'Task C'],\n    type: 'unordered',\n    variant: 'checkmark'\n  }\n}"
+                },
+                {
+                    "name": "UnorderedDash",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    items: ['Point One', 'Point Two', 'Point Three'],\n    type: 'unordered',\n    variant: 'dash'\n  }\n}"
+                }
+            ],
             "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts": [
                 {
                     "name": "Default",
@@ -785,6 +898,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<InputComponent>",
                     "file": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/atoms/list.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ListComponent>",
+                    "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1089,6 +1215,66 @@
             },
             {
                 "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OrderedNumbered",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnorderedCheckmark",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnorderedDash",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/list.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

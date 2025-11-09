@@ -13,6 +13,7 @@ export * from './lib/atoms/headline/headline.component';
 export * from './lib/atoms/input/input.component';
 export * from './lib/atoms/date/date.component';
 export * from './lib/atoms/image/image.component';
+export * from './lib/atoms/list/list.component';
 
 // Molecules
 // export * from './lib/molecules/search-bar/search-bar.component';
