@@ -1,5 +1,3 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -38,9 +36,6 @@
     },
     {
       "path": "./projects/business-landing/tsconfig.app.json"
-    },
-    {
-      "path": "./projects/business-landing/tsconfig.spec.json"
     }
   ]
 }
