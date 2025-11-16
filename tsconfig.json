@@ -35,6 +35,12 @@
     },
     {
       "path": "./projects/fine-dining/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/business-landing/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/business-landing/tsconfig.spec.json"
     }
   ]
 }
