@@ -1,0 +1,12 @@
+<section class="navbar-main">
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <atomic-icon [iconSrc]="iconSrc" [alt]="alt" [title]="title" [class]="class"></atomic-icon>
+        </div>
+        <div class="navbar-right">
+            @for (link of navLinks; track link.routerLink) {
+                <atomic-link [routerLink]="link.routerLink" [label]="link.label"></atomic-link>
+            }
+        </div>
+    </nav>
+</section>
