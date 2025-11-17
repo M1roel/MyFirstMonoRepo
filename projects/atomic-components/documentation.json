@@ -11,6 +11,26 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AboutLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Über uns'\n  }\n}"
+            },
+            {
+                "name": "ContactLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Kontakt'\n  }\n}"
+            },
+            {
                 "name": "CustomClassHeadline",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -131,6 +151,16 @@
                 "defaultValue": "{\n  args: {\n    format: 'full',\n    locale: 'de-DE'\n  },\n}"
             },
             {
+                "name": "HomeLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Startseite'\n  }\n}"
+            },
+            {
                 "name": "Medium",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -179,6 +209,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<InputComponent>",
                 "defaultValue": "{\n  title: 'Atoms/Input',\n  component: InputComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    type: {\n      control: 'radio',\n      options: ['text', 'password', 'email', 'number', 'search', 'textarea'],\n    },\n    variant: {\n      control: 'radio',\n      options: ['primary', 'wa-search'],\n    },\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LinkComponent>",
+                "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n  }\n}"
             },
             {
                 "name": "meta",
@@ -411,6 +451,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<LinkComponent>",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<ListComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
                 "deprecated": false,
@@ -476,6 +527,48 @@
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/atomic-components/src/stories/atoms/link.stories.ts": [
+                {
+                    "name": "AboutLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Über uns'\n  }\n}"
+                },
+                {
+                    "name": "ContactLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Kontakt'\n  }\n}"
+                },
+                {
+                    "name": "HomeLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Startseite'\n  }\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<LinkComponent>",
+                    "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n  }\n}"
+                }
+            ],
             "projects/atomic-components/src/stories/atoms/headline.stories.ts": [
                 {
                     "name": "CustomClassHeadline",
@@ -904,6 +997,19 @@
                     "kind": 184
                 }
             ],
+            "projects/atomic-components/src/stories/atoms/link.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LinkComponent>",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "projects/atomic-components/src/stories/atoms/list.stories.ts": [
                 {
                     "name": "Story",
@@ -1215,6 +1321,56 @@
             },
             {
                 "filePath": "projects/atomic-components/src/stories/atoms/input.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AboutLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ContactLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "HomeLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

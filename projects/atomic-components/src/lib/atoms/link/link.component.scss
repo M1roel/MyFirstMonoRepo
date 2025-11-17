@@ -1,0 +1,9 @@
+@use '../../../_variables' as v;
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
