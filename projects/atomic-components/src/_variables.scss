@@ -1,5 +1,4 @@
 /*Colors*/
-
 $color-primary: grey;
 $color-secondary: blue;
 $color-tertiary: green;
@@ -22,3 +21,50 @@ $fd-color-bg-light: #2C2C2C;
 $fd-color-font-light: #FFF8E1;
 $fd-color-font-accent: #F3EDD7;
 $fd-color-font-dark: #D5CFBC;
+
+/*Colors - Business Landing Page*/
+/*Dark Background*/
+$blp-color-bg-dark: #020619;
+$blp-color-bg-layer: #070D25;
+$blp-color-bg-panel: #252A3D;
+$blp-color-bg-primary-layer: #38366C;
+$blp-color-bg-neutral: #727385;
+$blp-color-bg-light: #BCB6C5;
+/*Gradient Palettes*/
+$blp-gradient-hero: linear-gradient(90deg, #38366C 0%, #4A4AA0 50%, #3AB4FF 100%);
+$blp-gradient-lavender: linear-gradient(90deg, #BCB6C5 0%, #38366C 100%);
+$blp-gradient-night: linear-gradient(90deg, #020619 0%, #252A3D 50%, #727385 100%);
+/*Glow Effects*/
+$blp-glow-primary: #BDB4FF;
+$blp-glow-secondary: #6DE1FF;
+$blp-glow-ambient: #E7E4F2;
+/*Web3 Colors*/
+$blp-color-web3-primary: #5F57FF;
+$blp-color-web3-primary-hover: #3D37CE;
+$blp-color-web3-secondary: #3AB4FF;
+$blp-color-web3-secondary-hover: #1085C8;
+$blp-color-web3-success: #41E8A1;
+$blp-color-web3-success-hover: #1FB07B;
+$blp-color-web3-warning: #FFC85A;
+$blp-color-web3-warning-hover: #ECA63D;
+$blp-color-web3-error: #FF6B7D;
+$blp-color-web3-error-hover: #D64556;
+$blp-color-web3-info: #6DE1FF;
+$blp-color-web3-info-hover: #3AB4FF;
+/*Text Colors*/
+$blp-color-text-contrast: #F7F8FC;
+$blp-color-text-primary: #D9DBE7;
+$blp-color-text-secondary: #A6A8BE;
+$blp-color-text-muted: #727385;
+$blp-color-text-disabled: #545669;
+/*UI Element Colors for Cards, Borders and Inputs*/
+$blp-color-ui-card-dark: #141726;
+$blp-color-ui-card-light: #1C2133;
+$blp-color-ui-border: #2B3147;
+$blp-color-ui-hover: #3A4057;
+$blp-color-ui-divider: #484F66;
+$blp-color-ui-disabled: #727385;
+/*web3 Accent Colors*/
+$blp-color-accent-neon: #8A5BFF;
+$blp-color-accent-cyan: #00C7FF;
+$blp-color-accent-pink: #FF77E9;
