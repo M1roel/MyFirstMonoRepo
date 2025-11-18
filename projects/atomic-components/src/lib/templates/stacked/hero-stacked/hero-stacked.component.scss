@@ -9,11 +9,11 @@
     width: 100%;
 
     &__content {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 1rem;
+        justify-content: center;
         max-width: 1200px;
         padding: 0 1rem;
         text-align: center;
@@ -28,14 +28,6 @@
             gap: 2rem;
         }
     }
-
-    &__headline {
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
-    }
-
-    &__subheadline {
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
 }
 
 .hero-stacked.business {
@@ -43,18 +35,29 @@
 
     .hero-stacked__headline {
         color: v.$blp-color-text-contrast;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
     }
 
     .hero-stacked__subheadline {
         color: v.$blp-color-text-primary;
+        font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+        font-weight: 400;
     }
 }
 
 .hero-stacked.primary {
     background-color: v.$color-primary;
 
-    .hero-stacked__headline,
+    .hero-stacked__headline {
+        color: white;
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 600;
+    }
+
     .hero-stacked__subheadline {
         color: white;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        font-weight: 400;
     }
 }
