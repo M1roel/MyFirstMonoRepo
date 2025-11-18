@@ -1,0 +1,42 @@
+@use '../../../variables' as v;
+
+.navbar-main {
+    height: 90px;
+    font-family: 'DM Sans';
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.navbar-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.primary {
+    background-color: v.$blp-color-bg-light;
+    color: v.$blp-color-text-primary;
+}
+
+.business {
+    background-color: v.$blp-color-bg-dark;
+    color: v.$blp-color-text-contrast;
+
+    &:hover {
+        color: v.$blp-gradient-hero;
+    }
+}

@@ -2,8 +2,15 @@
 
 a {
     text-decoration: none;
+    color: inherit;    
+    font-family: v.$font-family-primary;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
 
     &:hover {
         text-decoration: underline;
+        background-color: rgba(255, 255, 255, 0.1);
     }
 }
