@@ -1,6 +1,8 @@
 @use '../../../variables' as v;
 
 .navbar-main {
+    display: flex;
+    justify-content: center;
     height: 90px;
     padding: 0 1rem;
     width: 100%;

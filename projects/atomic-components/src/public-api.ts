@@ -22,6 +22,7 @@ export * from './lib/atoms/link/link.component';
 // export * from './lib/molecules/dropdown/dropdown.component';
 // export * from './lib/molecules/hourly-card/hourly-card.component';
 // export * from './lib/molecules/info-card/info-card.component';
+export * from './lib/molecules/navbar/navbar.component';
 
 // Organisms
 // export * from './lib/organisms/daily-forecast/daily-forecast.component';
