@@ -2,9 +2,8 @@
 
 .navbar-main {
     height: 90px;
-    font-family: 'DM Sans';
-    width: 100%;
     padding: 0 1rem;
+    width: 100%;
 }
 
 .navbar-container {
@@ -33,10 +32,6 @@
 }
 
 .business {
-    background-color: v.$blp-color-bg-dark;
+    background: v.$blp-gradient-night;
     color: v.$blp-color-text-contrast;
-
-    &:hover {
-        color: v.$blp-gradient-hero;
-    }
 }

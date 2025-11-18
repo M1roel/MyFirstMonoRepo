@@ -6,6 +6,7 @@ import { NgClass } from '@angular/common';
 export interface NavLink {
   label: string;
   routerLink: string;
+  variant?: 'primary' | 'business';
 }
 
 @Component({

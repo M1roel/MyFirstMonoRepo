@@ -19,29 +19,36 @@ const meta: Meta<LinkComponent> = {
     routerLink: {
       control: 'text',
     },
+    variant: {
+      control: 'select',
+      options: ['primary', 'business']
+    },
   }
 };
 
 export default meta;
 type Story = StoryObj<LinkComponent>;
 
-export const AboutLink: Story = {
+export const PrimaryLink: Story = {
   args: {
-    label: 'Über uns',
-    routerLink: '/about'
+    label: 'Primary Link',
+    routerLink: '/about',
+    variant: 'primary'
   }
 };
 
-export const ContactLink: Story = {
+export const BusinessLink: Story = {
   args: {
-    label: 'Kontakt',
-    routerLink: '/contact'
+    label: 'Business Link',
+    routerLink: '/contact',
+    variant: 'business'
   }
 };
 
 export const HomeLink: Story = {
   args: {
     label: 'Startseite',
-    routerLink: '/'
+    routerLink: '/',
+    variant: 'primary'
   }
 };

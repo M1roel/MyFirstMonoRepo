@@ -53,3 +53,19 @@ export const BusinessNavbar: Story = {
     ],
   },
 };
+
+export const MixedVariants: Story = {
+  args: {
+    iconSrc: 'assets/logo.png',
+    alt: 'Company Logo',
+    title: 'Home',
+    class: 'navbar-logo',
+    variant: 'primary', // Default variant für Navbar
+    navLinks: [
+      { label: 'Home', routerLink: '/' }, // Uses navbar variant (primary)
+      { label: 'About', routerLink: '/about', variant: 'business' }, // Override with business
+      { label: 'Services', routerLink: '/services' }, // Uses navbar variant (primary)
+      { label: 'Contact', routerLink: '/contact', variant: 'business' }, // Override with business
+    ],
+  },
+};

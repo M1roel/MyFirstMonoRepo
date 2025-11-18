@@ -1,16 +1,31 @@
 @use '../../../_variables' as v;
-
-a {
-    text-decoration: none;
+.link-base {
     color: inherit;    
     font-family: v.$font-family-primary;
-    font-weight: 500;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
+    text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.primary {
+    border-radius: 0.1rem;
+    font-weight: 500;
 
     &:hover {
         text-decoration: underline;
         background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.business {
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    position: relative;
+
+    &:hover {
+        border-bottom: 2px solid v.$blp-color-web3-primary;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(95, 87, 255, 0.4);
     }
 }

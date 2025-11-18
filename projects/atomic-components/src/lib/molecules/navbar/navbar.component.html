@@ -5,7 +5,11 @@
         </div>
         <div class="navbar-right">
             @for (link of navLinks; track link.routerLink) {
-                <atomic-link [routerLink]="link.routerLink" [label]="link.label"></atomic-link>
+                <atomic-link 
+                    [routerLink]="link.routerLink" 
+                    [label]="link.label" 
+                    [variant]="link.variant || variant">
+                </atomic-link>
             }
         </div>
     </nav>
