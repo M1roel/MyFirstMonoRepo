@@ -33,3 +33,4 @@ export * from './lib/templates/split/hero-section-split/hero-section-split.compo
 export * from './lib/templates/split/philosophy-section-split/philosophy-section-split.component';
 export * from './lib/templates/split/about-section-split/about-section-split.component';
 export * from './lib/templates/split/gallery-section-split/gallery-section-split.component';
+export * from './lib/templates/stacked/hero-stacked/hero-stacked.component';

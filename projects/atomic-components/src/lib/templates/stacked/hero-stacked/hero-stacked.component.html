@@ -1,0 +1,18 @@
+<section [ngClass]="['hero-stacked', variant]">
+    <div class='hero-stacked__content'>
+        <atomic-headline 
+            class="hero-stacked__headline" 
+            [headingText]="headingText" 
+            [level]="1">
+        </atomic-headline>
+        <atomic-text 
+            class="hero-stacked__subheadline" 
+            [text]="subheadingText">
+        </atomic-text>
+        <atomic-button 
+            class="hero-stacked__cta-button" 
+            [label]="buttonText" 
+            (click)="onButtonClick()">
+        </atomic-button>
+    </div>
+</section>

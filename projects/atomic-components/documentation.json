@@ -11,14 +11,14 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "AboutLink",
+                "name": "BusinessLink",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Über uns',\n    routerLink: '/about'\n  }\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Business Link',\n    routerLink: '/contact',\n    variant: 'business'\n  }\n}"
             },
             {
                 "name": "BusinessNavbar",
@@ -28,17 +28,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'business',\n    navLinks: [\n      { label: 'Home        ', routerLink: '/' },\n      { label: 'About       ', routerLink: '/about' },\n      { label: 'Services    ', routerLink: '/services' },\n      { label: 'Contact     ', routerLink: '/contact' },\n    ],\n  },\n}"
-            },
-            {
-                "name": "ContactLink",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Kontakt',\n    routerLink: '/contact'\n  }\n}"
+                "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'business',\n    navLinks: [\n      { label: 'Home', routerLink: '/' },\n      { label: 'About', routerLink: '/about' },\n      { label: 'Services', routerLink: '/services' },\n      { label: 'Contact', routerLink: '/contact' },\n    ],\n  },\n}"
             },
             {
                 "name": "CustomClassHeadline",
@@ -148,7 +138,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary',\n    navLinks: [\n      { label: 'Home        ', routerLink: '/' },\n      { label: 'About       ', routerLink: '/about' },\n      { label: 'Services    ', routerLink: '/services' },\n      { label: 'Contact     ', routerLink: '/contact' },\n    ],\n  },\n}"
+                "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary',\n    navLinks: [\n      { label: 'Home', routerLink: '/' },\n      { label: 'About', routerLink: '/about' },\n      { label: 'Services', routerLink: '/services' },\n      { label: 'Contact', routerLink: '/contact' },\n    ],\n  },\n}"
             },
             {
                 "name": "English",
@@ -178,7 +168,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Startseite',\n    routerLink: '/'\n  }\n}"
+                "defaultValue": "{\n  args: {\n    label: 'Startseite',\n    routerLink: '/',\n    variant: 'primary'\n  }\n}"
             },
             {
                 "name": "Medium",
@@ -238,7 +228,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<LinkComponent>",
-                "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n    routerLink: {\n      control: 'text',\n    },\n  }\n}"
+                "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n    routerLink: {\n      control: 'text',\n    },\n    variant: {\n      control: 'select',\n      options: ['primary', 'business']\n    },\n  }\n}"
             },
             {
                 "name": "meta",
@@ -249,16 +239,6 @@
                 "deprecationMessage": "",
                 "type": "Meta<ListComponent>",
                 "defaultValue": "{\n  title: 'Atoms/List',\n  component: ListComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    items: {\n      control: { type: 'object' },\n      description: 'Array of strings to be displayed as list items.'\n    },\n    type: {\n      control: { type: 'select', options: ['unordered', 'ordered'] },\n      description: 'Type of the list: unordered (ul) or ordered (ol).'\n    },\n    variant: {\n      control: { type: 'select', options: ['default', 'bullet', 'numbered', 'checkmark', 'dash'] },\n      description: 'Visual variant of the list.'\n    }\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<DailyForecastComponent>",
-                "defaultValue": "{\n  title: 'Organisms/Daily Forecast',\n  component: DailyForecastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    dummyForecast: { control: 'object' }\n  }\n}"
             },
             {
                 "name": "meta",
@@ -311,6 +291,26 @@
                 "defaultValue": "{\n  title: 'Molecules/Search Bar',\n  component: SearchBarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    buttonText: { control: 'text' }\n  }\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<DailyForecastComponent>",
+                "defaultValue": "{\n  title: 'Organisms/Daily Forecast',\n  component: DailyForecastComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    dummyForecast: { control: 'object' }\n  }\n}"
+            },
+            {
+                "name": "MixedVariants",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary', // Default variant für Navbar\n    navLinks: [\n      { label: 'Home', routerLink: '/' }, // Uses navbar variant (primary)\n      { label: 'About', routerLink: '/about', variant: 'business' }, // Override with business\n      { label: 'Services', routerLink: '/services' }, // Uses navbar variant (primary)\n      { label: 'Contact', routerLink: '/contact', variant: 'business' }, // Override with business\n    ],\n  },\n}"
+            },
+            {
                 "name": "OrderedNumbered",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -328,7 +328,17 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "PrimaryLink",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Primary Link',\n    routerLink: '/about',\n    variant: 'primary'\n  }\n}"
             },
             {
                 "name": "Short",
@@ -503,17 +513,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<DailyForecastComponent>",
-                "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<DropdownComponent>",
                 "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
                 "deprecated": false,
@@ -564,30 +563,31 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<DailyForecastComponent>",
+                "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
             }
         ],
         "enumerations": [],
         "groupedVariables": {
             "projects/atomic-components/src/stories/atoms/link.stories.ts": [
                 {
-                    "name": "AboutLink",
+                    "name": "BusinessLink",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Über uns',\n    routerLink: '/about'\n  }\n}"
-                },
-                {
-                    "name": "ContactLink",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Kontakt',\n    routerLink: '/contact'\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Business Link',\n    routerLink: '/contact',\n    variant: 'business'\n  }\n}"
                 },
                 {
                     "name": "HomeLink",
@@ -597,7 +597,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Startseite',\n    routerLink: '/'\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    label: 'Startseite',\n    routerLink: '/',\n    variant: 'primary'\n  }\n}"
                 },
                 {
                     "name": "meta",
@@ -607,7 +607,17 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<LinkComponent>",
-                    "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n    routerLink: {\n      control: 'text',\n    },\n  }\n}"
+                    "defaultValue": "{\n  title: 'Atoms/Link',\n  component: LinkComponent,\n  tags: ['autodocs'],\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  argTypes: {\n    label: {\n      control: 'text',\n    },\n    routerLink: {\n      control: 'text',\n    },\n    variant: {\n      control: 'select',\n      options: ['primary', 'business']\n    },\n  }\n}"
+                },
+                {
+                    "name": "PrimaryLink",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Primary Link',\n    routerLink: '/about',\n    variant: 'primary'\n  }\n}"
                 }
             ],
             "projects/atomic-components/src/stories/molecules/navbar.stories.ts": [
@@ -619,7 +629,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'business',\n    navLinks: [\n      { label: 'Home        ', routerLink: '/' },\n      { label: 'About       ', routerLink: '/about' },\n      { label: 'Services    ', routerLink: '/services' },\n      { label: 'Contact     ', routerLink: '/contact' },\n    ],\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'business',\n    navLinks: [\n      { label: 'Home', routerLink: '/' },\n      { label: 'About', routerLink: '/about' },\n      { label: 'Services', routerLink: '/services' },\n      { label: 'Contact', routerLink: '/contact' },\n    ],\n  },\n}"
                 },
                 {
                     "name": "DefaultNavbar",
@@ -629,7 +639,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary',\n    navLinks: [\n      { label: 'Home        ', routerLink: '/' },\n      { label: 'About       ', routerLink: '/about' },\n      { label: 'Services    ', routerLink: '/services' },\n      { label: 'Contact     ', routerLink: '/contact' },\n    ],\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary',\n    navLinks: [\n      { label: 'Home', routerLink: '/' },\n      { label: 'About', routerLink: '/about' },\n      { label: 'Services', routerLink: '/services' },\n      { label: 'Contact', routerLink: '/contact' },\n    ],\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -640,6 +650,16 @@
                     "deprecationMessage": "",
                     "type": "Meta<NavbarComponent>",
                     "defaultValue": "{\n  title: 'Molecules/Navbar',\n  component: NavbarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    iconSrc: { control: 'text' },\n    alt: { control: 'text' },\n    title: { control: 'text' },\n    class: { control: 'text' },\n    variant: { \n      control: 'select',\n      options: ['primary', 'business']\n    },\n    navLinks: { control: 'object' },\n  }\n}"
+                },
+                {
+                    "name": "MixedVariants",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    iconSrc: 'assets/logo.png',\n    alt: 'Company Logo',\n    title: 'Home',\n    class: 'navbar-logo',\n    variant: 'primary', // Default variant für Navbar\n    navLinks: [\n      { label: 'Home', routerLink: '/' }, // Uses navbar variant (primary)\n      { label: 'About', routerLink: '/about', variant: 'business' }, // Override with business\n      { label: 'Services', routerLink: '/services' }, // Uses navbar variant (primary)\n      { label: 'Contact', routerLink: '/contact', variant: 'business' }, // Override with business\n    ],\n  },\n}"
                 }
             ],
             "projects/atomic-components/src/stories/atoms/headline.stories.ts": [
@@ -1011,7 +1031,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
+                    "defaultValue": "{\n  decorators: [\n    applicationConfig({\n      providers: [provideRouter([])],\n    }),\n  ],\n  parameters: {\n    controls: {\n      matchers: {\n       color: /(background|color)$/i,\n       date: /Date$/i,\n      },\n    },\n  },\n}"
                 }
             ]
         },
@@ -1096,19 +1116,6 @@
                     "kind": 184
                 }
             ],
-            "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<DailyForecastComponent>",
-                    "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/atomic-components/src/stories/molecules/dropdown.stories.ts": [
                 {
                     "name": "Story",
@@ -1168,6 +1175,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<SearchBarComponent>",
                     "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<DailyForecastComponent>",
+                    "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1420,17 +1440,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "AboutLink",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "ContactLink",
+                "name": "BusinessLink",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1451,6 +1461,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/atoms/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PrimaryLink",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1651,6 +1671,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MixedVariants",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
