@@ -8,5 +8,9 @@ import { HeroStackedComponent } from 'atomic-components';
   styleUrl: './main-page.component.scss'
 })
 export class MainPageComponent {
-
+  heroContent = {
+    heading: "Moderne Websites, Shops und Web-Apps",
+    subheadingText: "Ich erstelle individuelle und performante Weblösungen für Ihr Unternehmen.",
+    buttonText: "Kostenloses Erstgespräch vereinbaren"
+  }
 }
