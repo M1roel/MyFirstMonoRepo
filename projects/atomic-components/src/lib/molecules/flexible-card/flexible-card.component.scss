@@ -1,0 +1,14 @@
+@use '../../../variables' as v;
+
+.flexible-card-main {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    width: 300px;
+}
+
+.business {
+    background-color: v.$blp-color-bg-layer;
+    border-radius: 12px;
+}

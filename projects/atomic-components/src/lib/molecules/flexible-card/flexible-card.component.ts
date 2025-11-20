@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'atomic-flexible-card',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './flexible-card.component.html',
   styleUrl: './flexible-card.component.scss'
 })
 export class FlexibleCardComponent {
-
+  @Input() variant: 'primary' | 'business' = 'primary';
 }
