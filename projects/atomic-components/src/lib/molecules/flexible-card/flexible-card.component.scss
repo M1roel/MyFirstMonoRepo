@@ -11,4 +11,9 @@
 .business {
     background-color: v.$blp-color-bg-layer;
     border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 2px 8px v.$blp-color-web3-primary-alpha;
+    }
 }
