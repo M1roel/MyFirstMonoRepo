@@ -1,8 +1,9 @@
 @use '../../../variables' as v;
 
 .flexible-card-main {
-    align-items: center;
+    align-items: start;
     display: flex;
+    flex-direction: column;
     height: 400px;
     justify-content: center;
     width: 300px;
@@ -11,9 +12,13 @@
 .business {
     background-color: v.$blp-color-bg-layer;
     border-radius: 12px;
+    color: v.$blp-color-text-contrast;
+    font-family: 'DM Sans', sans-serif;
+    gap: 24px;
+    padding: 8px 12px;
     transition: all 0.3s ease;
 
     &:hover {
-        box-shadow: 0 2px 8px v.$blp-color-web3-primary-alpha;
+        box-shadow: 0 2px 8px v.$blp-color-web3-secondary-alpha;
     }
 }
