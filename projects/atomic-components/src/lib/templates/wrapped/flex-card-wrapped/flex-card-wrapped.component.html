@@ -1,0 +1,11 @@
+<section [ngClass]="['flex-card-section-main', variant]">
+    <div class="flex-card-wrapper">
+        @for (card of cards; track card) {
+            <atomic-flexible-card [variant]="card.variant || variant">
+                <div card-up>{{ card.topContent }}</div>
+                <div card-mid>{{ card.midContent }}</div>
+                <div card-down>{{ card.bottomContent }}</div>
+            </atomic-flexible-card>
+        }
+    </div>  
+</section>

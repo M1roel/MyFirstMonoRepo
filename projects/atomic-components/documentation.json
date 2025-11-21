@@ -38,7 +38,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    variant: 'business',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'business',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <atomic-flexible-card [variant]=\"variant\">\n        <atomic-headline \n          card-mid\n          [headingText]=\"'Premium Business Solution'\"\n          [level]=\"3\">\n        </atomic-headline>\n        \n        <atomic-text \n          card-down\n          [textContent]=\"'Professionelle Lösungen für Ihr Unternehmen mit erstklassigem Support und modernster Technologie.'\">\n        </atomic-text>\n      </atomic-flexible-card>\n    `,\n  }),\n}"
             },
             {
                 "name": "CustomClassHeadline",
@@ -194,66 +194,6 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<DropdownComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n    options: {\n      control: { type: 'object' },\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<FlexibleCardComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Flexible Card',\n  component: FlexibleCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'business'],\n    },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<ForecastCardComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Forecast Card',\n  component: ForecastCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    city: {control: 'text'},\n    temperature: {control: 'number'},\n    condition: {control: 'text'},\n    weatherIcon: {control: 'text'}\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<InfoCardComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Info Card',\n  component: InfoCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    label: { control: 'text' },\n    value: { control: 'text' },\n    unit: { \n      control: 'select',\n      options: ['%', '°C', 'mm', 'km/h']\n    },\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<NavbarComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Navbar',\n  component: NavbarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    iconSrc: { control: 'text' },\n    alt: { control: 'text' },\n    title: { control: 'text' },\n    class: { control: 'text' },\n    variant: { \n      control: 'select',\n      options: ['primary', 'business']\n    },\n    navLinks: { control: 'object' },\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<SearchBarComponent>",
-                "defaultValue": "{\n  title: 'Molecules/Search Bar',\n  component: SearchBarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    buttonText: { control: 'text' }\n  }\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -314,6 +254,66 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<DropdownComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Dropdown',\n  component: DropdownComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'wa-dropdown'],\n    },\n    options: {\n      control: { type: 'object' },\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<FlexibleCardComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Flexible Card',\n  component: FlexibleCardComponent,\n  tags: ['autodocs'],\n  decorators: [\n    moduleMetadata({\n      imports: [IconComponent, HeadlineComponent, TextComponent],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'business'],\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ForecastCardComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Forecast Card',\n  component: ForecastCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    city: {control: 'text'},\n    temperature: {control: 'number'},\n    condition: {control: 'text'},\n    weatherIcon: {control: 'text'}\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InfoCardComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Info Card',\n  component: InfoCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    label: { control: 'text' },\n    value: { control: 'text' },\n    unit: { \n      control: 'select',\n      options: ['%', '°C', 'mm', 'km/h']\n    },\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<NavbarComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Navbar',\n  component: NavbarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    iconSrc: { control: 'text' },\n    alt: { control: 'text' },\n    title: { control: 'text' },\n    class: { control: 'text' },\n    variant: { \n      control: 'select',\n      options: ['primary', 'business']\n    },\n    navLinks: { control: 'object' },\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SearchBarComponent>",
+                "defaultValue": "{\n  title: 'Molecules/Search Bar',\n  component: SearchBarComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    placeholder: { control: 'text' },\n    buttonText: { control: 'text' }\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "projects/atomic-components/src/stories/organisms/daily-forecast.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -368,7 +368,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <atomic-flexible-card [variant]=\"variant\">\n        <atomic-headline \n          card-mid\n          [headingText]=\"'User Favorite'\"\n          [level]=\"3\">\n        </atomic-headline>\n        \n        <atomic-text \n          card-down\n          [textContent]=\"'Eine benutzerfreundliche Lösung, die von unseren Kunden geliebt wird und täglich genutzt wird.'\"\n          [variant]=\"'primary'\">\n        </atomic-text>\n      </atomic-flexible-card>\n    `,\n  }),\n}"
             },
             {
                 "name": "Short",
@@ -477,72 +477,6 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<DropdownComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<FlexibleCardComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<ForecastCardComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<InfoCardComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<NavbarComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<SearchBarComponent>",
-                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 184
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
                 "rawtype": "StoryObj<ButtonComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/button.stories.ts",
                 "deprecated": false,
@@ -600,6 +534,72 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<ListComponent>",
                 "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<DropdownComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<FlexibleCardComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ForecastCardComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<InfoCardComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<NavbarComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<SearchBarComponent>",
+                "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -712,7 +712,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    variant: 'business',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'business',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <atomic-flexible-card [variant]=\"variant\">\n        <atomic-headline \n          card-mid\n          [headingText]=\"'Premium Business Solution'\"\n          [level]=\"3\">\n        </atomic-headline>\n        \n        <atomic-text \n          card-down\n          [textContent]=\"'Professionelle Lösungen für Ihr Unternehmen mit erstklassigem Support und modernster Technologie.'\">\n        </atomic-text>\n      </atomic-flexible-card>\n    `,\n  }),\n}"
                 },
                 {
                     "name": "meta",
@@ -722,7 +722,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<FlexibleCardComponent>",
-                    "defaultValue": "{\n  title: 'Molecules/Flexible Card',\n  component: FlexibleCardComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'business'],\n    },\n  },\n}"
+                    "defaultValue": "{\n  title: 'Molecules/Flexible Card',\n  component: FlexibleCardComponent,\n  tags: ['autodocs'],\n  decorators: [\n    moduleMetadata({\n      imports: [IconComponent, HeadlineComponent, TextComponent],\n    }),\n  ],\n  argTypes: {\n    variant: {\n      control: { type: 'select' },\n      options: ['primary', 'business'],\n    },\n  },\n}"
                 },
                 {
                     "name": "PrimaryVariant",
@@ -732,7 +732,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    variant: 'primary',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <atomic-flexible-card [variant]=\"variant\">\n        <atomic-headline \n          card-mid\n          [headingText]=\"'User Favorite'\"\n          [level]=\"3\">\n        </atomic-headline>\n        \n        <atomic-text \n          card-down\n          [textContent]=\"'Eine benutzerfreundliche Lösung, die von unseren Kunden geliebt wird und täglich genutzt wird.'\"\n          [variant]=\"'primary'\">\n        </atomic-text>\n      </atomic-flexible-card>\n    `,\n  }),\n}"
                 }
             ],
             "projects/atomic-components/src/stories/atoms/headline.stories.ts": [
@@ -1111,84 +1111,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/atomic-components/src/stories/molecules/dropdown.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<DropdownComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<FlexibleCardComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<ForecastCardComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/info-card.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<InfoCardComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/navbar.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<NavbarComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
-            "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<SearchBarComponent>",
-                    "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 184
-                }
-            ],
             "projects/atomic-components/src/stories/atoms/button.stories.ts": [
                 {
                     "name": "Story",
@@ -1261,6 +1183,84 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<ListComponent>",
                     "file": "projects/atomic-components/src/stories/atoms/list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/dropdown.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<DropdownComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/dropdown.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<FlexibleCardComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/flexible-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ForecastCardComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/forecast-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/info-card.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InfoCardComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/info-card.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/navbar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<NavbarComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/navbar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "projects/atomic-components/src/stories/molecules/search-bar.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SearchBarComponent>",
+                    "file": "projects/atomic-components/src/stories/molecules/search-bar.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",

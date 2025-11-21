@@ -34,3 +34,5 @@ export * from './lib/templates/split/philosophy-section-split/philosophy-section
 export * from './lib/templates/split/about-section-split/about-section-split.component';
 export * from './lib/templates/split/gallery-section-split/gallery-section-split.component';
 export * from './lib/templates/stacked/hero-stacked/hero-stacked.component';
+export * from './lib/templates/wrapped/flex-card-wrapped/flex-card-wrapped.component';
+export type { CardData } from './lib/templates/wrapped/flex-card-wrapped/flex-card-wrapped.component';

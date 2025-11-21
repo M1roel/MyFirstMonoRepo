@@ -11,6 +11,7 @@
 
 .business {
     background-color: v.$blp-color-bg-layer;
+    box-shadow: 0 4px 32px v.$blp-color-web3-primary-alpha;
     border-radius: 12px;
     color: v.$blp-color-text-contrast;
     font-family: 'DM Sans', sans-serif;
@@ -19,6 +20,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        box-shadow: 0 2px 8px v.$blp-color-web3-secondary-alpha;
+        box-shadow: 0 4px 32px v.$blp-color-web3-secondary-alpha;
+        transform: scale(1.03);
     }
 }
