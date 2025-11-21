@@ -1,21 +1,22 @@
 <section [ngClass]="['flex-card-section-main', variant]">
+    @if (headingText) {
+    <atomic-headline [headingText]="headingText" [level]="headingLevel"></atomic-headline>
+    }
     <div class="flex-card-wrapper">
         @for (card of cards; track card) {
-            <atomic-flexible-card [variant]="card.variant || variant">
-                <div card-up>{{ card.topContent }}</div>
-                <div card-mid>{{ card.midContent }}</div>
-                <div card-down>
-                    @if (card.buttonLabel) {
-                        <atomic-button 
-                            [label]="card.buttonLabel"
-                            (click)="card.buttonAction?.()"
-                            [variant]="card.buttonVariant || card.variant || variant">
-                        </atomic-button>
-                    } @else {
-                        {{ card.bottomContent }}
-                    }
-                </div>
-            </atomic-flexible-card>
+        <atomic-flexible-card [variant]="card.variant || variant">
+            <div card-up>{{ card.topContent }}</div>
+            <div card-mid>{{ card.midContent }}</div>
+            <div card-down>
+                @if (card.buttonLabel) {
+                <atomic-button [label]="card.buttonLabel" (click)="card.buttonAction?.()"
+                    [variant]="variant">
+                </atomic-button>
+                } @else {
+                {{ card.bottomContent }}
+                }
+            </div>
+        </atomic-flexible-card>
         }
-    </div>  
+    </div>
 </section>

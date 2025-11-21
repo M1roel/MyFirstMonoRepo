@@ -36,11 +36,16 @@
 }
 
 .business {
-    background-color: v.$blp-color-web3-primary;
+    background-color: v.$blp-color-web3-primary-alpha;
     border-radius: 12px;
     box-sizing: border-box;
     color: v.$blp-color-text-contrast;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: v.$blp-color-web3-secondary-hover-alpha;
+    }
 }

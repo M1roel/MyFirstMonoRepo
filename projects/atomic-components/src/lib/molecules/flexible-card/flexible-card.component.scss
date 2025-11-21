@@ -1,11 +1,12 @@
 @use '../../../variables' as v;
 
 .flexible-card-main {
-    align-items: start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: 400px;
     justify-content: center;
+    text-align: center;
     width: 300px;
 }
 
@@ -32,6 +33,6 @@
         box-shadow: 
             0 8px 48px v.$blp-color-web3-secondary-alpha,
             inset 0 1px 0 rgba(255, 255, 255, 0.15);
-        transform: translateY(-4px) scale(1.02);
+        transform: translateY(-4px) scale(1.05);
     }
 }
