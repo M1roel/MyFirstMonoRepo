@@ -14,7 +14,6 @@ export class MainPageComponent {
     buttonText: "Kostenloses Erstgespräch vereinbaren"
   };
 
-  // Card-Daten als Objekt (startet mit 3 Cards)
   serviceCards: CardData[] = [
     {
       topContent: 'Webentwicklung',
@@ -35,23 +34,4 @@ export class MainPageComponent {
       variant: 'business'
     }
   ];
-
-  // Methode zum Hinzufügen weiterer Cards
-  addMoreCards() {
-    const newCards: CardData[] = [
-      {
-        topContent: 'SEO Optimierung',
-        midContent: 'Bessere Sichtbarkeit in Suchmaschinen für mehr Traffic.',
-        bottomContent: 'SEO-Check',
-        variant: 'business'
-      },
-      {
-        topContent: 'Performance',
-        midContent: 'Schnelle Ladezeiten und optimierte Benutzererfahrung.',
-        bottomContent: 'Speed-Test',
-        variant: 'business'
-      }
-    ];
-    this.serviceCards = [...this.serviceCards, ...newCards];
-  }
 }
