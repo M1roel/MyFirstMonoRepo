@@ -1,0 +1,25 @@
+@use '../../../../variables' as v;    
+
+.flex-card-section-main {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100dvh;
+    width: 100%;
+}
+
+.flex-card-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-around;
+    margin: 2rem 2rem;
+    width: 100%;
+}
+
+.business {
+    background: v.$blp-gradient-night;
+}

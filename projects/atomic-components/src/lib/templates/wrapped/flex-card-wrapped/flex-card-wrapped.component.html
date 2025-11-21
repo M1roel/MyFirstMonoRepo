@@ -4,7 +4,17 @@
             <atomic-flexible-card [variant]="card.variant || variant">
                 <div card-up>{{ card.topContent }}</div>
                 <div card-mid>{{ card.midContent }}</div>
-                <div card-down>{{ card.bottomContent }}</div>
+                <div card-down>
+                    @if (card.buttonLabel) {
+                        <atomic-button 
+                            [label]="card.buttonLabel"
+                            (click)="card.buttonAction?.()"
+                            [variant]="card.buttonVariant || card.variant || variant">
+                        </atomic-button>
+                    } @else {
+                        {{ card.bottomContent }}
+                    }
+                </div>
             </atomic-flexible-card>
         }
     </div>  

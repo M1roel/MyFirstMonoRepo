@@ -10,17 +10,28 @@
 }
 
 .business {
-    background-color: v.$blp-color-bg-layer;
-    box-shadow: 0 4px 32px v.$blp-color-web3-primary-alpha;
+    background: v.$blp-color-bg-layer-alpha-10;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    
+    border: 1px solid v.$blp-color-ui-border-alpha-10;
     border-radius: 12px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 v.$blp-color-ui-border-alpha-10;
+    
     color: v.$blp-color-text-contrast;
-    font-family: 'DM Sans', sans-serif;
+    font-family: v.$font-family-primary;
     gap: 24px;
     padding: 8px 12px;
     transition: all 0.3s ease;
 
     &:hover {
-        box-shadow: 0 4px 32px v.$blp-color-web3-secondary-alpha;
-        transform: scale(1.03);
+        background: v.$blp-color-bg-layer-alpha-60;
+        border-color: v.$blp-color-ui-border-alpha-20;
+        box-shadow: 
+            0 8px 48px v.$blp-color-web3-secondary-alpha,
+            inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        transform: translateY(-4px) scale(1.02);
     }
 }

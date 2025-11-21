@@ -18,19 +18,22 @@ export class MainPageComponent {
     {
       topContent: 'Webentwicklung',
       midContent: 'Moderne, responsive Websites und Web-Apps mit neuesten Technologien.',
-      bottomContent: 'Mehr erfahren',
+      buttonLabel: 'Mehr erfahren',
+      buttonAction: () => console.log('Webentwicklung clicked'),
       variant: 'business'
     },
     {
       topContent: 'E-Commerce',
       midContent: 'Professionelle Online-Shops mit optimierter User Experience.',
-      bottomContent: 'Shop-Demo ansehen',
+      buttonLabel: 'Shop-Demo ansehen',
+      buttonAction: () => console.log('E-Commerce clicked'),
       variant: 'business'
     },
     {
       topContent: 'Beratung',
       midContent: 'Strategische Beratung für Ihre digitale Transformation.',
-      bottomContent: 'Termin buchen',
+      buttonLabel: 'Termin buchen',
+      buttonAction: () => console.log('Beratung clicked'),
       variant: 'business'
     }
   ];

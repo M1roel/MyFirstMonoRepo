@@ -9,7 +9,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() label: string = '';
-  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'wa-search-btn' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'wa-search-btn' | 'business' = 'primary';
   @Output() clicked = new EventEmitter<void>();
 
   onClick() {

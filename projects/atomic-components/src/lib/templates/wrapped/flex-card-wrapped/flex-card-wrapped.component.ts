@@ -1,17 +1,21 @@
 import { Component, Input } from '@angular/core';
 import { NgClass } from '@angular/common';
 import { FlexibleCardComponent } from '../../../molecules/flexible-card/flexible-card.component';
+import { ButtonComponent } from '../../../atoms/button/button.component';
 
 export interface CardData {
   topContent: string;
   midContent: string;
-  bottomContent: string;
+  bottomContent?: string;
+  buttonLabel?: string;
+  buttonAction?: () => void;
+  buttonVariant?: 'primary' | 'business';
   variant?: 'primary' | 'business';
 }
 
 @Component({
   selector: 'atomic-flex-card-wrapped',
-  imports: [NgClass, FlexibleCardComponent],
+  imports: [NgClass, FlexibleCardComponent, ButtonComponent],
   templateUrl: './flex-card-wrapped.component.html',
   styleUrl: './flex-card-wrapped.component.scss'
 })

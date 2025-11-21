@@ -29,6 +29,8 @@ $fd-color-font-dark: #D5CFBC;
 /*Dark Background*/
 $blp-color-bg-dark: #020619;
 $blp-color-bg-layer: #070D25;
+$blp-color-bg-layer-alpha-10: rgba(7, 13, 37, 0.1);
+$blp-color-bg-layer-alpha-60: rgba(7, 13, 37, 0.6);
 $blp-color-bg-panel: #252A3D;
 $blp-color-bg-primary-layer: #38366C;
 $blp-color-bg-neutral: #727385;
@@ -76,6 +78,8 @@ $blp-color-text-disabled: #545669;
 $blp-color-ui-card-dark: #141726;
 $blp-color-ui-card-light: #1C2133;
 $blp-color-ui-border: #2B3147;
+$blp-color-ui-border-alpha-10: rgba(255, 255, 255, 0.1);
+$blp-color-ui-border-alpha-20: rgba(255, 255, 255, 0.2);
 $blp-color-ui-hover: #3A4057;
 $blp-color-ui-divider: #484F66;
 $blp-color-ui-disabled: #727385;
