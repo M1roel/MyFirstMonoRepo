@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
-import { HeroStackedComponent, FlexCardWrappedComponent, CardData } from 'atomic-components';
+import { HeroStackedComponent, FlexCardWrappedComponent, CardData, ImageComponent, TextComponent, HeadlineComponent } from 'atomic-components';
 
 @Component({
   selector: 'app-main-page',
-  imports: [HeroStackedComponent, FlexCardWrappedComponent],
+  imports: [HeroStackedComponent, FlexCardWrappedComponent, ImageComponent, TextComponent, HeadlineComponent],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })
 export class MainPageComponent {
+  src = 'images/webentwicklung.jpg';
+  alt = 'Team working on web development project';
+  text = `Sie möchten Ihr Unternehmen digital stärken? Wir bieten Ihnen maßgeschneiderte Komplettlösungen für moderne, responsive Websites und innovative Web-Apps – speziell für kleine und mittelständische Unternehmen (KMU).`;
+
+  vorteile: string[] = [
+    'Individuelles, ansprechendes Design',
+    'Optimale Darstellung auf Smartphone, Tablet und Desktop',
+    'Schnelle Ladezeiten und hohe Benutzerfreundlichkeit',
+    'Suchmaschinenoptimierte Inhalte für mehr Sichtbarkeit',
+    'Persönliche Beratung und Rundum-Service – von der Idee bis zum fertigen Webauftritt'
+  ];
+
+  abschluss = `Profitieren Sie von unserer Erfahrung und unserem Engagement für Ihren digitalen Erfolg. Wir begleiten Sie zuverlässig durch alle Projektphasen.\n\nMachen Sie Ihr Unternehmen fit für die digitale Zukunft – kontaktieren Sie uns jetzt und erfahren Sie mehr!`;
+
   heroContent = {
     heading: "Moderne Webseiten, Shops und Web-Apps",
     subheadingText: "Individuelle und performante Weblösungen für Ihr Unternehmen.",
@@ -38,7 +52,7 @@ export class MainPageComponent {
     }
   ];
 
-projectsCards: CardData[] = [
+  projectsCards: CardData[] = [
     {
       headingText: 'Kundenprojekt A',
       midContent: 'Beschreibung des Projekts A.',

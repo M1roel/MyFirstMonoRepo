@@ -1,18 +1,26 @@
-<atomic-hero-stacked 
-    [headingText]="heroContent.heading" 
-    [subheadingText]="heroContent.subheadingText" 
-    [buttonText]="heroContent.buttonText"
-    variant="business">
+<atomic-hero-stacked [headingText]="heroContent.heading" [subheadingText]="heroContent.subheadingText"
+  [buttonText]="heroContent.buttonText" variant="business">
 </atomic-hero-stacked>
-<atomic-flex-card-wrapped 
-  [headingText]="'Unsere Dienstleistungen'"
-  [headingLevel]="2"
-  [cards]="serviceCards" 
+<atomic-flex-card-wrapped [headingText]="'Unsere Dienstleistungen'" [headingLevel]="2" [cards]="serviceCards"
   variant="business">
 </atomic-flex-card-wrapped>
-<atomic-flex-card-wrapped 
-  [headingText]="'Projekte unserer Kunden'"
-  [headingLevel]="2"
-  [cards]="projectsCards" 
+<section class="more-web-dev">
+  <div class="more-up">
+    <atomic-headline [headingText]="'Moderne Webentwicklung für Ihr Unternehmen'" [level]="2" />
+  </div>
+  <div class="more-down">
+    <atomic-image [src]="src" [alt]="alt" />
+    <div>
+      <atomic-text [text]="text"></atomic-text>
+      <ul class="vorteile-list">
+        @for (vorteil of vorteile; track vorteil) {
+          <li>{{ vorteil }}</li>
+        }
+      </ul>
+      <atomic-text [text]="abschluss"></atomic-text>
+    </div>
+  </div>
+</section>
+<atomic-flex-card-wrapped [headingText]="'Projekte unserer Kunden'" [headingLevel]="2" [cards]="projectsCards"
   variant="business">
 </atomic-flex-card-wrapped>

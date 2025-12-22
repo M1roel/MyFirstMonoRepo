@@ -1,0 +1,87 @@
+@use '../../../../atomic-components/src/variables' as v;
+
+.more-web-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem;
+}
+
+.more-down {
+    .vorteile-list {
+        font-size: 1.3rem;
+        line-height: 1.6;
+        margin: 1.2rem 0;
+        padding-left: 1.5rem;
+        color: v.$blp-color-text-contrast;
+
+        li {
+            margin-bottom: 0.5rem;
+            list-style: disc inside;
+        }
+    }
+
+    align-items: stretch;
+    color: v.$blp-color-text-contrast;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+    max-width: 1900px;
+    width: 100%;
+
+    ::ng-deep atomic-image {
+        align-items: center;
+        display: flex;
+        flex: 0 0 50%;
+        justify-content: center;
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 600px;
+            object-fit: contain;
+            padding: 4px 8px;
+            width: 100%;
+        }
+    }
+
+    >div {
+        display: flex;
+        flex: 0 0 50%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+
+    ::ng-deep atomic-text {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 1000px) {
+        .vorteile-list {
+            font-size: 1rem;
+        }
+
+        flex-direction: column;
+
+        ::ng-deep atomic-image,
+        >div {
+            flex: 1 1 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+
+        ::ng-deep atomic-image img {
+            max-width: 100%;
+        }
+
+        ::ng-deep atomic-text {
+            font-size: 1rem;
+        }
+    }
+}
