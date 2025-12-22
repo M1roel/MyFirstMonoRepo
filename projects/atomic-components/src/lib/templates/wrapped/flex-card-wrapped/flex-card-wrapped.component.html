@@ -5,7 +5,13 @@
     <div class="flex-card-wrapper">
         @for (card of cards; track card) {
         <atomic-flexible-card [variant]="card.variant || variant">
-            <div card-up>{{ card.topContent }}</div>
+            <div card-up>
+                @if (card.headingText) {
+                <atomic-headline [headingText]="card.headingText" [level]="3"></atomic-headline>
+                } @else {
+                {{ card.topContent }}
+                }
+            </div>
             <div card-mid>{{ card.midContent }}</div>
             <div card-down>
                 @if (card.buttonLabel) {

@@ -16,21 +16,21 @@ export class MainPageComponent {
 
   serviceCards: CardData[] = [
     {
-      topContent: 'Webentwicklung',
+      headingText: 'Webentwicklung',
       midContent: 'Moderne, responsive Websites und Web-Apps mit neuesten Technologien.',
       buttonLabel: 'Mehr erfahren',
       buttonAction: () => console.log('Webentwicklung clicked'),
       variant: 'business'
     },
     {
-      topContent: 'E-Commerce',
+      headingText: 'E-Commerce',
       midContent: 'Professionelle Online-Shops mit optimierter User Experience.',
       buttonLabel: 'Shop-Demo ansehen',
       buttonAction: () => console.log('E-Commerce clicked'),
       variant: 'business'
     },
     {
-      topContent: 'Beratung',
+      headingText: 'Beratung',
       midContent: 'Strategische Beratung für Ihre digitale Transformation.',
       buttonLabel: 'Termin buchen',
       buttonAction: () => console.log('Beratung clicked'),

@@ -5,12 +5,13 @@ import { ButtonComponent } from '../../../atoms/button/button.component';
 import { HeadlineComponent } from '../../../atoms/headline/headline.component';
 
 export interface CardData {
-  topContent: string;
+  topContent?: string;
   midContent: string;
   bottomContent?: string;
   buttonLabel?: string;
   buttonAction?: () => void;
   variant: 'primary' | 'business';
+  headingText?: string;
 }
 
 @Component({
