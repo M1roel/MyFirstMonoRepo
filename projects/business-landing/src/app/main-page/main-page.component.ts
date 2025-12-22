@@ -37,4 +37,28 @@ export class MainPageComponent {
       variant: 'business'
     }
   ];
+
+projectsCards: CardData[] = [
+    {
+      headingText: 'Kundenprojekt A',
+      midContent: 'Beschreibung des Projekts A.',
+      buttonLabel: 'Projekt ansehen',
+      buttonAction: () => console.log('Kundenprojekt A clicked'),
+      variant: 'business'
+    },
+    {
+      headingText: 'Kundenprojekt B',
+      midContent: 'Beschreibung des Projekts B.',
+      buttonLabel: 'Projekt ansehen',
+      buttonAction: () => console.log('Kundenprojekt B clicked'),
+      variant: 'business'
+    },
+    {
+      headingText: 'Kundenprojekt C',
+      midContent: 'Beschreibung des Projekts C.',
+      buttonLabel: 'Projekt ansehen',
+      buttonAction: () => console.log('Kundenprojekt C clicked'),
+      variant: 'business'
+    }
+  ];
 }
