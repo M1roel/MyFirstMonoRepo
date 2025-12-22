@@ -54,24 +54,24 @@ export class MainPageComponent {
 
   projectsCards: CardData[] = [
     {
-      headingText: 'Kundenprojekt A',
-      midContent: 'Beschreibung des Projekts A.',
+      headingText: 'Chat-App für Unternehmen',
+      midContent: 'Echtzeit-Kommunikationslösung zur Verbesserung der Teamzusammenarbeit.',
       buttonLabel: 'Projekt ansehen',
-      buttonAction: () => console.log('Kundenprojekt A clicked'),
+          buttonAction: () => window.open('https://dabubble.peterpfautsch.de', '_blank'),
       variant: 'business'
     },
     {
-      headingText: 'Kundenprojekt B',
-      midContent: 'Beschreibung des Projekts B.',
+      headingText: 'Aufgabenmanager',
+      midContent: 'Jira-ähnliche Web-App zur effizienten Verwaltung von Projekten und Aufgaben.',
       buttonLabel: 'Projekt ansehen',
-      buttonAction: () => console.log('Kundenprojekt B clicked'),
+      buttonAction: () => window.open('https://join.peterpfautsch.de', '_blank'),
       variant: 'business'
     },
     {
-      headingText: 'Kundenprojekt C',
-      midContent: 'Beschreibung des Projekts C.',
+      headingText: 'Rechnungs Web-App',
+      midContent: 'Tool zur einfachen Erstellung und Verwaltung von Rechnungen online.',
       buttonLabel: 'Projekt ansehen',
-      buttonAction: () => console.log('Kundenprojekt C clicked'),
+      buttonAction: () => window.open('https://peytor.de', '_blank'),
       variant: 'business'
     }
   ];
