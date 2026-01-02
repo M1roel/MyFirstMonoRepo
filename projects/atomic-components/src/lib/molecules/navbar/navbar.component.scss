@@ -38,6 +38,9 @@
 }
 
 .business {
-    background: v.$blp-color-bg-layer;
+    background: linear-gradient(160deg, rgba(24, 24, 27, 0.95) 0%, rgba(35, 35, 42, 0.9) 60%),
+		radial-gradient(circle at 30% 30%, v.$blp-color-accent-neon, transparent 45%),
+		radial-gradient(circle at 70% 20%, v.$blp-color-accent-pink, transparent 42%),
+		linear-gradient(120deg, rgba(68, 71, 90, 0.35) 0%, rgba(24, 24, 27, 0) 55%);
     color: v.$blp-color-text-contrast;
 }
