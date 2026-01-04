@@ -1,11 +1,13 @@
 @use '../../../variables' as v;
 
 .navbar-main {
+    position: fixed;
     display: flex;
     justify-content: center;
     height: 90px;
     padding: 0 1rem;
     width: 100%;
+    z-index: 1000;
 }
 
 .navbar-container {
@@ -38,9 +40,8 @@
 }
 
 .business {
-    background: linear-gradient(160deg, rgba(24, 24, 27, 0.95) 0%, rgba(35, 35, 42, 0.9) 60%),
-		radial-gradient(circle at 30% 30%, v.$blp-color-accent-neon, transparent 45%),
-		radial-gradient(circle at 70% 20%, v.$blp-color-accent-pink, transparent 42%),
-		linear-gradient(120deg, rgba(68, 71, 90, 0.35) 0%, rgba(24, 24, 27, 0) 55%);
+    background: v.$blp-color-bg-layer-alpha-60;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     color: v.$blp-color-text-contrast;
 }

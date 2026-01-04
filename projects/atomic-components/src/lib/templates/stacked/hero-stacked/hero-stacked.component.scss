@@ -31,6 +31,7 @@
 }
 
 .hero-stacked.business {
+    height: 100dvh;
     background: radial-gradient(circle at 30% 20%, v.$blp-color-web3-secondary-alpha, transparent 32%),
 		radial-gradient(circle at 75% 30%, v.$blp-color-web3-success-alpha, transparent 38%),
 		linear-gradient(135deg, v.$blp-color-bg-layer-alpha-60 0%, rgba(35, 35, 42, 0.9) 100%);
