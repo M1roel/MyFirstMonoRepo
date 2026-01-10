@@ -1,0 +1,11 @@
+<section class="footer__links">
+    <atomic-headline [level]="level" class="footer__links-headline">{{ headingText }}</atomic-headline>
+    <ul class="footer__links-list">
+        <li class="footer__links-item">
+            @for (link of footerLinks; track link.routerLink) {
+            <atomic-link [routerLink]="link.routerLink" [label]="link.label" [variant]="link.variant || variant">
+            </atomic-link>
+            }
+        </li>
+    </ul>
+</section>
